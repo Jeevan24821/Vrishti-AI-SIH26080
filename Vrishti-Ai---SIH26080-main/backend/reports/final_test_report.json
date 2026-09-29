@@ -1,0 +1,2033 @@
+{
+  "timestamp": "2026-09-26T17:58:15.772841",
+  "experiment_id": "EXP_003_MULTI_STATE_2020_2025_GOA",
+  "file_metadata": {
+    "state": "Goa",
+    "filename": "GOA_DATA.csv",
+    "filepath": "C:\\Users\\ChandrashekarPoojary\\Downloads\\Moniesh X G1 SIH\\Vrishti-Ai---SIH26080-main\\data\\GOA_DATA.csv",
+    "sha256": "30e4df58e8b84e13579651aae693dd1885a468f78bd1bc420d6ae0a61f03d1b6",
+    "file_size_bytes": 8411845,
+    "total_rows": 44064,
+    "total_columns": 29,
+    "columns": [
+      "location_id",
+      "time",
+      "date",
+      "time_ist",
+      "hour_ist",
+      "district_name",
+      "taluka_name",
+      "district_code",
+      "latitude",
+      "longitude",
+      "elevation (m)",
+      "temperature_2m (\u00b0C)",
+      "rain_6h_accum (mm)",
+      "dew_point_2m (\u00b0C)",
+      "relative_humidity_2m (%)",
+      "pressure_msl (hPa)",
+      "surface_pressure (hPa)",
+      "cloud_cover (%)",
+      "wind_direction_10m (\u00b0)",
+      "wind_speed_10m (km/h)",
+      "boundary_layer_height (m)",
+      "total_column_integrated_water_vapour (kg/m\u00b2)",
+      "raw_nwp_rain_6h_forecast (mm)",
+      "raw_nwp_temp_forecast (\u00b0C)",
+      "raw_nwp_pressure_msl_forecast (hPa)",
+      "raw_nwp_wind_speed_forecast (km/h)",
+      "regime_id",
+      "state",
+      "datetime"
+    ]
+  },
+  "provenance": {
+    "state": "Goa",
+    "filename": "GOA_DATA.csv",
+    "dataset_hash_sha256": "30e4df58e8b84e13579651aae693dd1885a468f78bd1bc420d6ae0a61f03d1b6",
+    "total_rows": 44064,
+    "train_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "train_rows": 29376,
+    "val_years": [
+      2024
+    ],
+    "val_rows": 7344,
+    "test_years": [
+      2025
+    ],
+    "test_rows": 7344,
+    "features_count": 60,
+    "feature_names": [
+      "nwp_rain",
+      "log_nwp_rain",
+      "nwp_temp",
+      "nwp_pressure",
+      "nwp_wind_speed",
+      "temp_2m",
+      "pressure_msl",
+      "wind_speed",
+      "dew_point_2m",
+      "relative_humidity",
+      "surface_pressure",
+      "cloud_cover",
+      "wind_direction",
+      "boundary_layer_height",
+      "tcwv",
+      "lag_1_rain",
+      "lag_2_rain",
+      "lag_1_temp",
+      "latitude",
+      "longitude",
+      "elevation",
+      "month",
+      "day_of_year",
+      "hour",
+      "sin_month",
+      "cos_month",
+      "sin_hour",
+      "cos_hour",
+      "dew_point_depression",
+      "nwp_temp_diff",
+      "nwp_pressure_diff",
+      "nwp_wind_diff",
+      "u_wind",
+      "v_wind",
+      "orographic_terrain_wind_proxy",
+      "convective_moisture_flux",
+      "convective_instability",
+      "cloud_saturation_index",
+      "orographic_lift_vector",
+      "coastal_distance_proxy",
+      "nwp_evap_bias_proxy",
+      "nwp_saturation_deficit",
+      "nwp_rain_sq",
+      "nwp_rain_tcwv",
+      "nwp_rain_rh",
+      "moisture_flux_u",
+      "moisture_flux_v",
+      "wind_shear_sq",
+      "thermo_heavy_rain_potential",
+      "orographic_nwp_interaction",
+      "saturation_vapor_pressure_deficit",
+      "surface_msl_pressure_diff",
+      "low_level_jet_proxy",
+      "coastal_moisture_lift",
+      "nwp_rain_lag1",
+      "nwp_rain_lag2",
+      "nwp_rain_roll24h_mean",
+      "nwp_rain_roll24h_max",
+      "nwp_rain_ratio",
+      "pressure_msl_diff6h"
+    ],
+    "selected_global_model": "XGBoost_1000",
+    "district_models_count": 0,
+    "training_timestamp": "2026-09-26T17:58:15.772841",
+    "system_version": "VRISHTI AI 2.0 Reproducible Scientific Bias Correction System"
+  },
+  "dataset_audit": {
+    "file_metadata": {
+      "state": "Goa",
+      "filename": "GOA_DATA.csv",
+      "filepath": "C:\\Users\\ChandrashekarPoojary\\Downloads\\Moniesh X G1 SIH\\Vrishti-Ai---SIH26080-main\\data\\GOA_DATA.csv",
+      "sha256": "30e4df58e8b84e13579651aae693dd1885a468f78bd1bc420d6ae0a61f03d1b6",
+      "file_size_bytes": 8411845,
+      "total_rows": 44064,
+      "total_columns": 29,
+      "columns": [
+        "location_id",
+        "time",
+        "date",
+        "time_ist",
+        "hour_ist",
+        "district_name",
+        "taluka_name",
+        "district_code",
+        "latitude",
+        "longitude",
+        "elevation (m)",
+        "temperature_2m (\u00b0C)",
+        "rain_6h_accum (mm)",
+        "dew_point_2m (\u00b0C)",
+        "relative_humidity_2m (%)",
+        "pressure_msl (hPa)",
+        "surface_pressure (hPa)",
+        "cloud_cover (%)",
+        "wind_direction_10m (\u00b0)",
+        "wind_speed_10m (km/h)",
+        "boundary_layer_height (m)",
+        "total_column_integrated_water_vapour (kg/m\u00b2)",
+        "raw_nwp_rain_6h_forecast (mm)",
+        "raw_nwp_temp_forecast (\u00b0C)",
+        "raw_nwp_pressure_msl_forecast (hPa)",
+        "raw_nwp_wind_speed_forecast (km/h)",
+        "regime_id",
+        "state",
+        "datetime"
+      ]
+    },
+    "total_rows": 44064,
+    "total_columns": 29,
+    "missing_values": {
+      "location_id": 0,
+      "time": 0,
+      "date": 0,
+      "time_ist": 0,
+      "hour_ist": 0,
+      "district_name": 0,
+      "taluka_name": 0,
+      "district_code": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "elevation (m)": 0,
+      "temperature_2m (\u00b0C)": 0,
+      "rain_6h_accum (mm)": 0,
+      "dew_point_2m (\u00b0C)": 0,
+      "relative_humidity_2m (%)": 0,
+      "pressure_msl (hPa)": 0,
+      "surface_pressure (hPa)": 0,
+      "cloud_cover (%)": 0,
+      "wind_direction_10m (\u00b0)": 0,
+      "wind_speed_10m (km/h)": 0,
+      "boundary_layer_height (m)": 0,
+      "total_column_integrated_water_vapour (kg/m\u00b2)": 0,
+      "raw_nwp_rain_6h_forecast (mm)": 0,
+      "raw_nwp_temp_forecast (\u00b0C)": 0,
+      "raw_nwp_pressure_msl_forecast (hPa)": 0,
+      "raw_nwp_wind_speed_forecast (km/h)": 0,
+      "regime_id": 0,
+      "state": 0,
+      "datetime": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_station_time": 0,
+    "date_range": {
+      "min": "01-06-2020",
+      "max": "31-10-2025"
+    },
+    "unique_dates": 918,
+    "unique_timestamps": 3672,
+    "unique_stations": 12,
+    "unique_districts": 2,
+    "station_record_counts": {
+      "LOC_GOA_01": 3672,
+      "LOC_GOA_02": 3672,
+      "LOC_GOA_03": 3672,
+      "LOC_GOA_04": 3672,
+      "LOC_GOA_05": 3672,
+      "LOC_GOA_06": 3672,
+      "LOC_GOA_07": 3672,
+      "LOC_GOA_08": 3672,
+      "LOC_GOA_09": 3672,
+      "LOC_GOA_10": 3672,
+      "LOC_GOA_11": 3672,
+      "LOC_GOA_12": 3672
+    },
+    "district_record_counts": {
+      "North Goa": 18360,
+      "South Goa": 25704
+    },
+    "year_record_counts": {
+      "2020": 7344,
+      "2021": 7344,
+      "2022": 7344,
+      "2023": 7344,
+      "2024": 7344,
+      "2025": 7344
+    },
+    "month_record_counts": {
+      "5": 72,
+      "6": 8640,
+      "7": 8928,
+      "8": 8928,
+      "9": 8640,
+      "10": 8856
+    },
+    "period_6h_counts": {
+      "0": 11016,
+      "6": 11016,
+      "12": 11016,
+      "18": 11016
+    },
+    "regime_record_counts": {
+      "0": 17312,
+      "2": 16849,
+      "1": 9903
+    },
+    "observed_rainfall_stats": {
+      "min": 0.0,
+      "max": 208.6,
+      "mean": 4.991532770515614,
+      "median": 2.4,
+      "std": 7.026707032533627,
+      "p90": 13.3,
+      "p95": 18.1,
+      "p99": 29.7,
+      "zero_count": 5335,
+      "event_counts": {
+        "light_ge_2_5": 21798,
+        "moderate_ge_15_6": 3159,
+        "heavy_ge_64_5": 37,
+        "very_heavy_ge_115_5": 5
+      }
+    },
+    "nwp_rainfall_stats": {
+      "min": 0.0,
+      "max": 164.0,
+      "mean": 4.07765114379085,
+      "median": 2.21,
+      "std": 5.464656830985976,
+      "p90": 10.47,
+      "p95": 14.26,
+      "p99": 23.323700000000027
+    },
+    "quality_audit": {
+      "missing_values_pass": true,
+      "duplicate_rows_pass": true,
+      "duplicate_station_time_pass": true,
+      "non_negative_obs_pass": true,
+      "non_negative_nwp_pass": true,
+      "relative_humidity_pass": true,
+      "cloud_cover_pass": true
+    }
+  },
+  "split_metadata": {
+    "train": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": 29376,
+      "start_date": "01-06-2020",
+      "end_date": "31-10-2023"
+    },
+    "validation": {
+      "years": [
+        2024
+      ],
+      "rows": 7344,
+      "start_date": "01-06-2024",
+      "end_date": "31-10-2024"
+    },
+    "test": {
+      "years": [
+        2025
+      ],
+      "rows": 7344,
+      "start_date": "01-06-2025",
+      "end_date": "31-10-2025"
+    },
+    "unseen": {
+      "years": [],
+      "rows": 0,
+      "start_date": "nan",
+      "end_date": "nan"
+    }
+  },
+  "selected_global_model": "XGBoost_1000",
+  "validation_2024_metrics": {
+    "raw_nwp": {
+      "n": 7344,
+      "rmse": 2.3026,
+      "mae": 1.6262,
+      "bias": -1.1034,
+      "r_corr": 0.9807,
+      "r2": 0.8957,
+      "error_diagnosis": {
+        "overprediction_count": 2129,
+        "underprediction_count": 4726,
+        "mean_overprediction_mm": 0.8965,
+        "mean_underprediction_mm": -2.117
+      }
+    },
+    "linear_mos": {
+      "n": 7344,
+      "rmse": 1.2769,
+      "mae": 0.9803,
+      "bias": 0.0222,
+      "r_corr": 0.984,
+      "r2": 0.9679,
+      "error_diagnosis": {
+        "overprediction_count": 3702,
+        "underprediction_count": 3008,
+        "mean_overprediction_mm": 0.9909,
+        "mean_underprediction_mm": -1.1654
+      },
+      "rmse_improvement_pct": 44.54,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 39.72,
+      "mae_status": "improvement"
+    },
+    "xgb_1000": {
+      "n": 7344,
+      "rmse": 1.2307,
+      "mae": 0.9254,
+      "bias": 0.0253,
+      "r_corr": 0.9851,
+      "r2": 0.9702,
+      "error_diagnosis": {
+        "overprediction_count": 3829,
+        "underprediction_count": 2938,
+        "mean_overprediction_mm": 0.9072,
+        "mean_underprediction_mm": -1.1213
+      },
+      "rmse_improvement_pct": 46.55,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 43.09,
+      "mae_status": "improvement"
+    },
+    "xgb_2000": {
+      "n": 7344,
+      "rmse": 1.2373,
+      "mae": 0.935,
+      "bias": 0.0875,
+      "r_corr": 0.9849,
+      "r2": 0.9699,
+      "error_diagnosis": {
+        "overprediction_count": 3973,
+        "underprediction_count": 2793,
+        "mean_overprediction_mm": 0.9413,
+        "mean_underprediction_mm": -1.1095
+      },
+      "rmse_improvement_pct": 46.26,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 42.5,
+      "mae_status": "improvement"
+    },
+    "hist_gradient_boosting": {
+      "n": 7344,
+      "rmse": 1.2349,
+      "mae": 0.9245,
+      "bias": 0.0343,
+      "r_corr": 0.985,
+      "r2": 0.97,
+      "error_diagnosis": {
+        "overprediction_count": 3837,
+        "underprediction_count": 2881,
+        "mean_overprediction_mm": 0.9133,
+        "mean_underprediction_mm": -1.1304
+      },
+      "rmse_improvement_pct": 46.37,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 43.15,
+      "mae_status": "improvement"
+    },
+    "random_forest": {
+      "n": 7344,
+      "rmse": 1.2698,
+      "mae": 0.9569,
+      "bias": 0.0288,
+      "r_corr": 0.984,
+      "r2": 0.9683,
+      "error_diagnosis": {
+        "overprediction_count": 3820,
+        "underprediction_count": 2911,
+        "mean_overprediction_mm": 0.9427,
+        "mean_underprediction_mm": -1.1668
+      },
+      "rmse_improvement_pct": 44.85,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 41.15,
+      "mae_status": "improvement"
+    },
+    "extra_trees": {
+      "n": 7344,
+      "rmse": 1.2438,
+      "mae": 0.9379,
+      "bias": 0.0158,
+      "r_corr": 0.9847,
+      "r2": 0.9696,
+      "error_diagnosis": {
+        "overprediction_count": 3839,
+        "underprediction_count": 2943,
+        "mean_overprediction_mm": 0.9083,
+        "mean_underprediction_mm": -1.1464
+      },
+      "rmse_improvement_pct": 45.98,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 42.32,
+      "mae_status": "improvement"
+    },
+    "regime_aware_ml": {
+      "n": 7344,
+      "rmse": 1.2516,
+      "mae": 0.9307,
+      "bias": 0.0437,
+      "r_corr": 0.9845,
+      "r2": 0.9692,
+      "error_diagnosis": {
+        "overprediction_count": 3867,
+        "underprediction_count": 2871,
+        "mean_overprediction_mm": 0.9208,
+        "mean_underprediction_mm": -1.1302
+      },
+      "rmse_improvement_pct": 45.65,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 42.77,
+      "mae_status": "improvement"
+    }
+  },
+  "test_2025_metrics": {
+    "raw_nwp": {
+      "n": 7344,
+      "rmse": 2.1377,
+      "mae": 1.5235,
+      "bias": -1.0201,
+      "r_corr": 0.9757,
+      "r2": 0.8894,
+      "error_diagnosis": {
+        "overprediction_count": 2039,
+        "underprediction_count": 4853,
+        "mean_overprediction_mm": 0.901,
+        "mean_underprediction_mm": -1.9211
+      }
+    },
+    "linear_mos": {
+      "n": 7344,
+      "rmse": 1.2696,
+      "mae": 0.9628,
+      "bias": -0.0001,
+      "r_corr": 0.9803,
+      "r2": 0.961,
+      "error_diagnosis": {
+        "overprediction_count": 3599,
+        "underprediction_count": 3042,
+        "mean_overprediction_mm": 0.9783,
+        "mean_underprediction_mm": -1.1576
+      },
+      "rmse_improvement_pct": 40.61,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 36.8,
+      "mae_status": "improvement"
+    },
+    "xgb_1000": {
+      "n": 7344,
+      "rmse": 1.2109,
+      "mae": 0.9094,
+      "bias": 0.0244,
+      "r_corr": 0.9821,
+      "r2": 0.9645,
+      "error_diagnosis": {
+        "overprediction_count": 3718,
+        "underprediction_count": 2981,
+        "mean_overprediction_mm": 0.9173,
+        "mean_underprediction_mm": -1.0858
+      },
+      "rmse_improvement_pct": 43.35,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.31,
+      "mae_status": "improvement"
+    },
+    "xgb_2000": {
+      "n": 7344,
+      "rmse": 1.2179,
+      "mae": 0.9183,
+      "bias": 0.0816,
+      "r_corr": 0.982,
+      "r2": 0.9641,
+      "error_diagnosis": {
+        "overprediction_count": 3891,
+        "underprediction_count": 2866,
+        "mean_overprediction_mm": 0.9396,
+        "mean_underprediction_mm": -1.0673
+      },
+      "rmse_improvement_pct": 43.03,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 39.72,
+      "mae_status": "improvement"
+    },
+    "hist_gradient_boosting": {
+      "n": 7344,
+      "rmse": 1.2143,
+      "mae": 0.9099,
+      "bias": 0.0429,
+      "r_corr": 0.982,
+      "r2": 0.9643,
+      "error_diagnosis": {
+        "overprediction_count": 3743,
+        "underprediction_count": 2919,
+        "mean_overprediction_mm": 0.9299,
+        "mean_underprediction_mm": -1.0864
+      },
+      "rmse_improvement_pct": 43.2,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.27,
+      "mae_status": "improvement"
+    },
+    "random_forest": {
+      "n": 7344,
+      "rmse": 1.2637,
+      "mae": 0.9484,
+      "bias": 0.0329,
+      "r_corr": 0.9805,
+      "r2": 0.9613,
+      "error_diagnosis": {
+        "overprediction_count": 3724,
+        "underprediction_count": 2972,
+        "mean_overprediction_mm": 0.9622,
+        "mean_underprediction_mm": -1.1269
+      },
+      "rmse_improvement_pct": 40.88,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 37.75,
+      "mae_status": "improvement"
+    },
+    "extra_trees": {
+      "n": 7344,
+      "rmse": 1.2349,
+      "mae": 0.9282,
+      "bias": 0.0134,
+      "r_corr": 0.9814,
+      "r2": 0.9631,
+      "error_diagnosis": {
+        "overprediction_count": 3736,
+        "underprediction_count": 3017,
+        "mean_overprediction_mm": 0.921,
+        "mean_underprediction_mm": -1.1095
+      },
+      "rmse_improvement_pct": 42.23,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 39.07,
+      "mae_status": "improvement"
+    },
+    "selected_global_ml": {
+      "n": 7344,
+      "rmse": 1.2109,
+      "mae": 0.9094,
+      "bias": 0.0244,
+      "r_corr": 0.9821,
+      "r2": 0.9645,
+      "error_diagnosis": {
+        "overprediction_count": 3718,
+        "underprediction_count": 2981,
+        "mean_overprediction_mm": 0.9173,
+        "mean_underprediction_mm": -1.0858
+      },
+      "rmse_improvement_pct": 43.35,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.31,
+      "mae_status": "improvement"
+    },
+    "regime_aware_ml": {
+      "n": 7344,
+      "rmse": 1.2186,
+      "mae": 0.9129,
+      "bias": 0.067,
+      "r_corr": 0.9819,
+      "r2": 0.9641,
+      "error_diagnosis": {
+        "overprediction_count": 3812,
+        "underprediction_count": 2864,
+        "mean_overprediction_mm": 0.9389,
+        "mean_underprediction_mm": -1.0803
+      },
+      "rmse_improvement_pct": 42.99,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.08,
+      "mae_status": "improvement"
+    },
+    "oracle_regime_ml": {
+      "n": 7344,
+      "rmse": 1.218,
+      "mae": 0.913,
+      "bias": 0.0692,
+      "r_corr": 0.9819,
+      "r2": 0.9641,
+      "error_diagnosis": {
+        "overprediction_count": 3814,
+        "underprediction_count": 2864,
+        "mean_overprediction_mm": 0.9406,
+        "mean_underprediction_mm": -1.0778
+      },
+      "rmse_improvement_pct": 43.02,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.07,
+      "mae_status": "improvement"
+    },
+    "district_aware_ml": {
+      "n": 7344,
+      "rmse": 1.2186,
+      "mae": 0.9129,
+      "bias": 0.067,
+      "r_corr": 0.9819,
+      "r2": 0.9641,
+      "error_diagnosis": {
+        "overprediction_count": 3812,
+        "underprediction_count": 2864,
+        "mean_overprediction_mm": 0.9389,
+        "mean_underprediction_mm": -1.0803
+      },
+      "rmse_improvement_pct": 42.99,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 40.08,
+      "mae_status": "improvement"
+    }
+  },
+  "regime_classifier": {
+    "overall_accuracy": 0.9725,
+    "per_regime_metrics": {
+      "0": {
+        "accuracy": 0.9549,
+        "precision": 0.9805,
+        "recall": 0.9549,
+        "f1_score": 0.9675,
+        "sample_count": 2903,
+        "count": 2903
+      },
+      "1": {
+        "accuracy": 0.9796,
+        "precision": 0.9704,
+        "recall": 0.9796,
+        "f1_score": 0.975,
+        "sample_count": 1472,
+        "count": 1472
+      },
+      "2": {
+        "accuracy": 0.9862,
+        "precision": 0.966,
+        "recall": 0.9862,
+        "f1_score": 0.976,
+        "sample_count": 2969,
+        "count": 2969
+      }
+    }
+  },
+  "threshold_metrics": {
+    "light": {
+      "raw_nwp": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 3752,
+        "hits": 3448,
+        "misses": 618,
+        "false_alarms": 304,
+        "correct_negatives": 2974,
+        "pod": 0.848,
+        "far": 0.081,
+        "csi": 0.789,
+        "ets": 0.5979,
+        "fss": 0.8821,
+        "frequency_bias": 0.9228,
+        "rare_event_warning": false
+      },
+      "linear_mos": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4003,
+        "hits": 3642,
+        "misses": 424,
+        "false_alarms": 361,
+        "correct_negatives": 2917,
+        "pod": 0.8957,
+        "far": 0.0902,
+        "csi": 0.8227,
+        "ets": 0.6449,
+        "fss": 0.9027,
+        "frequency_bias": 0.9845,
+        "rare_event_warning": false
+      },
+      "global_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4022,
+        "hits": 3669,
+        "misses": 397,
+        "false_alarms": 353,
+        "correct_negatives": 2925,
+        "pod": 0.9024,
+        "far": 0.0878,
+        "csi": 0.8303,
+        "ets": 0.6579,
+        "fss": 0.9073,
+        "frequency_bias": 0.9892,
+        "rare_event_warning": false
+      },
+      "xgb_1000": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4022,
+        "hits": 3669,
+        "misses": 397,
+        "false_alarms": 353,
+        "correct_negatives": 2925,
+        "pod": 0.9024,
+        "far": 0.0878,
+        "csi": 0.8303,
+        "ets": 0.6579,
+        "fss": 0.9073,
+        "frequency_bias": 0.9892,
+        "rare_event_warning": false
+      },
+      "xgb_2000": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4065,
+        "hits": 3695,
+        "misses": 371,
+        "false_alarms": 370,
+        "correct_negatives": 2908,
+        "pod": 0.9088,
+        "far": 0.091,
+        "csi": 0.833,
+        "ets": 0.6609,
+        "fss": 0.9089,
+        "frequency_bias": 0.9998,
+        "rare_event_warning": false
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4031,
+        "hits": 3680,
+        "misses": 386,
+        "false_alarms": 351,
+        "correct_negatives": 2927,
+        "pod": 0.9051,
+        "far": 0.0871,
+        "csi": 0.8331,
+        "ets": 0.6627,
+        "fss": 0.909,
+        "frequency_bias": 0.9914,
+        "rare_event_warning": false
+      },
+      "random_forest": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 3974,
+        "hits": 3642,
+        "misses": 424,
+        "false_alarms": 332,
+        "correct_negatives": 2946,
+        "pod": 0.8957,
+        "far": 0.0835,
+        "csi": 0.8281,
+        "ets": 0.656,
+        "fss": 0.906,
+        "frequency_bias": 0.9774,
+        "rare_event_warning": false
+      },
+      "extra_trees": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 3979,
+        "hits": 3630,
+        "misses": 436,
+        "false_alarms": 349,
+        "correct_negatives": 2929,
+        "pod": 0.8928,
+        "far": 0.0877,
+        "csi": 0.8222,
+        "ets": 0.6451,
+        "fss": 0.9024,
+        "frequency_bias": 0.9786,
+        "rare_event_warning": false
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4045,
+        "hits": 3679,
+        "misses": 387,
+        "false_alarms": 366,
+        "correct_negatives": 2912,
+        "pod": 0.9048,
+        "far": 0.0905,
+        "csi": 0.8301,
+        "ets": 0.6566,
+        "fss": 0.9072,
+        "frequency_bias": 0.9948,
+        "rare_event_warning": false
+      },
+      "district_aware_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 7344,
+        "observed_events": 4066,
+        "forecast_events": 4045,
+        "hits": 3679,
+        "misses": 387,
+        "false_alarms": 366,
+        "correct_negatives": 2912,
+        "pod": 0.9048,
+        "far": 0.0905,
+        "csi": 0.8301,
+        "ets": 0.6566,
+        "fss": 0.9072,
+        "frequency_bias": 0.9948,
+        "rare_event_warning": false
+      }
+    },
+    "moderate": {
+      "raw_nwp": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 269,
+        "hits": 269,
+        "misses": 259,
+        "false_alarms": 0,
+        "correct_negatives": 6816,
+        "pod": 0.5095,
+        "far": 0.0,
+        "csi": 0.5095,
+        "ets": 0.4908,
+        "fss": 0.675,
+        "frequency_bias": 0.5095,
+        "rare_event_warning": false
+      },
+      "linear_mos": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 512,
+        "hits": 473,
+        "misses": 55,
+        "false_alarms": 39,
+        "correct_negatives": 6777,
+        "pod": 0.8958,
+        "far": 0.0762,
+        "csi": 0.8342,
+        "ets": 0.8227,
+        "fss": 0.9096,
+        "frequency_bias": 0.9697,
+        "rare_event_warning": false
+      },
+      "global_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 531,
+        "hits": 484,
+        "misses": 44,
+        "false_alarms": 47,
+        "correct_negatives": 6769,
+        "pod": 0.9167,
+        "far": 0.0885,
+        "csi": 0.8417,
+        "ets": 0.8305,
+        "fss": 0.9141,
+        "frequency_bias": 1.0057,
+        "rare_event_warning": false
+      },
+      "xgb_1000": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 531,
+        "hits": 484,
+        "misses": 44,
+        "false_alarms": 47,
+        "correct_negatives": 6769,
+        "pod": 0.9167,
+        "far": 0.0885,
+        "csi": 0.8417,
+        "ets": 0.8305,
+        "fss": 0.9141,
+        "frequency_bias": 1.0057,
+        "rare_event_warning": false
+      },
+      "xgb_2000": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 544,
+        "hits": 489,
+        "misses": 39,
+        "false_alarms": 55,
+        "correct_negatives": 6761,
+        "pod": 0.9261,
+        "far": 0.1011,
+        "csi": 0.8388,
+        "ets": 0.8272,
+        "fss": 0.9123,
+        "frequency_bias": 1.0303,
+        "rare_event_warning": false
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 532,
+        "hits": 484,
+        "misses": 44,
+        "false_alarms": 48,
+        "correct_negatives": 6768,
+        "pod": 0.9167,
+        "far": 0.0902,
+        "csi": 0.8403,
+        "ets": 0.8289,
+        "fss": 0.9132,
+        "frequency_bias": 1.0076,
+        "rare_event_warning": false
+      },
+      "random_forest": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 528,
+        "hits": 483,
+        "misses": 45,
+        "false_alarms": 45,
+        "correct_negatives": 6771,
+        "pod": 0.9148,
+        "far": 0.0852,
+        "csi": 0.8429,
+        "ets": 0.8318,
+        "fss": 0.9148,
+        "frequency_bias": 1.0,
+        "rare_event_warning": false
+      },
+      "extra_trees": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 535,
+        "hits": 487,
+        "misses": 41,
+        "false_alarms": 48,
+        "correct_negatives": 6768,
+        "pod": 0.9223,
+        "far": 0.0897,
+        "csi": 0.8455,
+        "ets": 0.8344,
+        "fss": 0.9163,
+        "frequency_bias": 1.0133,
+        "rare_event_warning": false
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 541,
+        "hits": 488,
+        "misses": 40,
+        "false_alarms": 53,
+        "correct_negatives": 6763,
+        "pod": 0.9242,
+        "far": 0.098,
+        "csi": 0.8399,
+        "ets": 0.8284,
+        "fss": 0.913,
+        "frequency_bias": 1.0246,
+        "rare_event_warning": false
+      },
+      "district_aware_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 7344,
+        "observed_events": 528,
+        "forecast_events": 541,
+        "hits": 488,
+        "misses": 40,
+        "false_alarms": 53,
+        "correct_negatives": 6763,
+        "pod": 0.9242,
+        "far": 0.098,
+        "csi": 0.8399,
+        "ets": 0.8284,
+        "fss": 0.913,
+        "frequency_bias": 1.0246,
+        "rare_event_warning": false
+      }
+    },
+    "heavy": {
+      "raw_nwp": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "linear_mos": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "global_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_1000": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_2000": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "random_forest": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "extra_trees": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7343,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 2,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 1,
+        "correct_negatives": 7342,
+        "pod": 1.0,
+        "far": 0.5,
+        "csi": 0.5,
+        "ets": 0.4999,
+        "fss": 0.6667,
+        "frequency_bias": 2.0,
+        "rare_event_warning": true
+      },
+      "district_aware_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 7344,
+        "observed_events": 1,
+        "forecast_events": 2,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 1,
+        "correct_negatives": 7342,
+        "pod": 1.0,
+        "far": 0.5,
+        "csi": 0.5,
+        "ets": 0.4999,
+        "fss": 0.6667,
+        "frequency_bias": 2.0,
+        "rare_event_warning": true
+      }
+    },
+    "very_heavy": {
+      "raw_nwp": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "linear_mos": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "global_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "xgb_1000": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "xgb_2000": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "random_forest": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "extra_trees": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      },
+      "district_aware_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 7344,
+        "observed_events": 0,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 7344,
+        "pod": "N/A",
+        "far": "N/A",
+        "csi": "N/A",
+        "ets": "N/A",
+        "fss": "N/A",
+        "frequency_bias": "N/A",
+        "rare_event_warning": false
+      }
+    }
+  },
+  "heavy_rain_calibration": {
+    "heavy_64_5mm": {
+      "threshold_mm": 64.5,
+      "brier_score": 0.0,
+      "sample_size": 7344,
+      "positive_cases": 1
+    },
+    "very_heavy_115_5mm": {
+      "threshold_mm": 115.5,
+      "brier_score": 0.0,
+      "sample_size": 7344,
+      "positive_cases": 0
+    }
+  },
+  "regime_breakdown": {
+    "0": {
+      "regime_name": "Active Monsoon / Coastal Orographic Regime",
+      "count": 2903,
+      "raw_nwp": {
+        "n": 2903,
+        "rmse": 2.902,
+        "mae": 2.2279,
+        "bias": -2.0049,
+        "r_corr": 0.981,
+        "r2": 0.8578,
+        "error_diagnosis": {
+          "overprediction_count": 385,
+          "underprediction_count": 2427,
+          "mean_overprediction_mm": 0.8346,
+          "mean_underprediction_mm": -2.5304
+        }
+      },
+      "global_ml": {
+        "n": 2903,
+        "rmse": 1.4017,
+        "mae": 1.1061,
+        "bias": 0.0303,
+        "r_corr": 0.9833,
+        "r2": 0.9668,
+        "error_diagnosis": {
+          "overprediction_count": 1445,
+          "underprediction_count": 1286,
+          "mean_overprediction_mm": 1.1387,
+          "mean_underprediction_mm": -1.2104
+        },
+        "rmse_improvement_pct": 51.7,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 50.35,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 2903,
+        "rmse": 1.4139,
+        "mae": 1.1164,
+        "bias": 0.1109,
+        "r_corr": 0.9831,
+        "r2": 0.9662,
+        "error_diagnosis": {
+          "overprediction_count": 1512,
+          "underprediction_count": 1238,
+          "mean_overprediction_mm": 1.1755,
+          "mean_underprediction_mm": -1.176
+        },
+        "rmse_improvement_pct": 51.28,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 49.89,
+        "mae_status": "improvement"
+      }
+    },
+    "1": {
+      "regime_name": "June Monsoon Regime (Onset & Coastal Orographic)",
+      "count": 1472,
+      "raw_nwp": {
+        "n": 1472,
+        "rmse": 1.1929,
+        "mae": 0.9085,
+        "bias": -0.1599,
+        "r_corr": 0.8344,
+        "r2": 0.6905,
+        "error_diagnosis": {
+          "overprediction_count": 595,
+          "underprediction_count": 749,
+          "mean_overprediction_mm": 0.9209,
+          "mean_underprediction_mm": -1.043
+        }
+      },
+      "global_ml": {
+        "n": 1472,
+        "rmse": 0.8999,
+        "mae": 0.6319,
+        "bias": -0.0062,
+        "r_corr": 0.9077,
+        "r2": 0.8238,
+        "error_diagnosis": {
+          "overprediction_count": 747,
+          "underprediction_count": 520,
+          "mean_overprediction_mm": 0.6076,
+          "mean_underprediction_mm": -0.8964
+        },
+        "rmse_improvement_pct": 24.56,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 30.44,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 1472,
+        "rmse": 0.897,
+        "mae": 0.6267,
+        "bias": -0.0194,
+        "r_corr": 0.9084,
+        "r2": 0.825,
+        "error_diagnosis": {
+          "overprediction_count": 745,
+          "underprediction_count": 515,
+          "mean_overprediction_mm": 0.5924,
+          "mean_underprediction_mm": -0.9178
+        },
+        "rmse_improvement_pct": 24.8,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 31.01,
+        "mae_status": "improvement"
+      }
+    },
+    "2": {
+      "regime_name": "July Monsoon Regime (Peak Active Surge)",
+      "count": 2969,
+      "raw_nwp": {
+        "n": 2969,
+        "rmse": 1.5375,
+        "mae": 1.1396,
+        "bias": -0.4836,
+        "r_corr": 0.9319,
+        "r2": 0.8293,
+        "error_diagnosis": {
+          "overprediction_count": 1059,
+          "underprediction_count": 1677,
+          "mean_overprediction_mm": 0.914,
+          "mean_underprediction_mm": -1.4315
+        }
+      },
+      "global_ml": {
+        "n": 2969,
+        "rmse": 1.1422,
+        "mae": 0.8547,
+        "bias": 0.0338,
+        "r_corr": 0.9518,
+        "r2": 0.9058,
+        "error_diagnosis": {
+          "overprediction_count": 1526,
+          "underprediction_count": 1175,
+          "mean_overprediction_mm": 0.8592,
+          "mean_underprediction_mm": -1.0332
+        },
+        "rmse_improvement_pct": 25.71,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 25.0,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 2969,
+        "rmse": 1.1489,
+        "mae": 0.8557,
+        "bias": 0.0668,
+        "r_corr": 0.9514,
+        "r2": 0.9047,
+        "error_diagnosis": {
+          "overprediction_count": 1555,
+          "underprediction_count": 1111,
+          "mean_overprediction_mm": 0.8749,
+          "mean_underprediction_mm": -1.0491
+        },
+        "rmse_improvement_pct": 25.27,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 24.91,
+        "mae_status": "improvement"
+      }
+    }
+  },
+  "district_breakdown": {
+    "North Goa": {
+      "district": "North Goa",
+      "count": 3060,
+      "sample_count": 3060,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 3060,
+        "rmse": 2.0611,
+        "mae": 1.4834,
+        "bias": -0.9712,
+        "r_corr": 0.9724,
+        "r2": 0.884,
+        "error_diagnosis": {
+          "overprediction_count": 879,
+          "underprediction_count": 2007,
+          "mean_overprediction_mm": 0.8867,
+          "mean_underprediction_mm": -1.8681
+        }
+      },
+      "global_ml": {
+        "n": 3060,
+        "rmse": 1.2115,
+        "mae": 0.9086,
+        "bias": 0.018,
+        "r_corr": 0.9798,
+        "r2": 0.9599,
+        "error_diagnosis": {
+          "overprediction_count": 1526,
+          "underprediction_count": 1252,
+          "mean_overprediction_mm": 0.9237,
+          "mean_underprediction_mm": -1.0837
+        },
+        "rmse_improvement_pct": 41.22,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 38.75,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 3060,
+        "rmse": 1.2144,
+        "mae": 0.9044,
+        "bias": 0.0594,
+        "r_corr": 0.9797,
+        "r2": 0.9597,
+        "error_diagnosis": {
+          "overprediction_count": 1580,
+          "underprediction_count": 1190,
+          "mean_overprediction_mm": 0.9288,
+          "mean_underprediction_mm": -1.0819
+        },
+        "rmse_improvement_pct": 41.08,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 39.03,
+        "mae_status": "improvement"
+      }
+    },
+    "South Goa": {
+      "district": "South Goa",
+      "count": 4284,
+      "sample_count": 4284,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 4284,
+        "rmse": 2.1908,
+        "mae": 1.5521,
+        "bias": -1.055,
+        "r_corr": 0.9776,
+        "r2": 0.8924,
+        "error_diagnosis": {
+          "overprediction_count": 1160,
+          "underprediction_count": 2846,
+          "mean_overprediction_mm": 0.9119,
+          "mean_underprediction_mm": -1.9585
+        }
+      },
+      "global_ml": {
+        "n": 4284,
+        "rmse": 1.2105,
+        "mae": 0.91,
+        "bias": 0.029,
+        "r_corr": 0.9835,
+        "r2": 0.9672,
+        "error_diagnosis": {
+          "overprediction_count": 2192,
+          "underprediction_count": 1729,
+          "mean_overprediction_mm": 0.9128,
+          "mean_underprediction_mm": -1.0873
+        },
+        "rmse_improvement_pct": 44.75,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 41.37,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 4284,
+        "rmse": 1.2217,
+        "mae": 0.9189,
+        "bias": 0.0724,
+        "r_corr": 0.9832,
+        "r2": 0.9665,
+        "error_diagnosis": {
+          "overprediction_count": 2232,
+          "underprediction_count": 1674,
+          "mean_overprediction_mm": 0.9461,
+          "mean_underprediction_mm": -1.0792
+        },
+        "rmse_improvement_pct": 44.23,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 40.8,
+        "mae_status": "improvement"
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "nwp_rain_rh",
+      "importance_score": 0.46438,
+      "std": 0.01972
+    },
+    {
+      "feature": "nwp_rain_tcwv",
+      "importance_score": 0.2267,
+      "std": 0.01543
+    },
+    {
+      "feature": "nwp_rain",
+      "importance_score": 0.15479,
+      "std": 0.00209
+    },
+    {
+      "feature": "nwp_rain_roll24h_max",
+      "importance_score": 0.0006,
+      "std": 0.00027
+    },
+    {
+      "feature": "lag_1_rain",
+      "importance_score": -0.00848,
+      "std": 0.00295
+    },
+    {
+      "feature": "nwp_evap_bias_proxy",
+      "importance_score": -0.02697,
+      "std": 0.00041
+    },
+    {
+      "feature": "nwp_rain_roll24h_mean",
+      "importance_score": -0.03123,
+      "std": 0.00069
+    },
+    {
+      "feature": "thermo_heavy_rain_potential",
+      "importance_score": -0.03647,
+      "std": 0.00193
+    },
+    {
+      "feature": "day_of_year",
+      "importance_score": -0.04084,
+      "std": 0.00245
+    },
+    {
+      "feature": "nwp_rain_lag1",
+      "importance_score": -0.047,
+      "std": 0.00183
+    },
+    {
+      "feature": "longitude",
+      "importance_score": -0.0477,
+      "std": 0.00169
+    },
+    {
+      "feature": "convective_moisture_flux",
+      "importance_score": -0.04776,
+      "std": 0.00078
+    },
+    {
+      "feature": "coastal_moisture_lift",
+      "importance_score": -0.04906,
+      "std": 0.0013
+    },
+    {
+      "feature": "boundary_layer_height",
+      "importance_score": -0.05023,
+      "std": 0.00016
+    },
+    {
+      "feature": "nwp_pressure",
+      "importance_score": -0.05265,
+      "std": 0.0001
+    },
+    {
+      "feature": "cos_hour",
+      "importance_score": -0.05266,
+      "std": 0.00044
+    },
+    {
+      "feature": "lag_1_temp",
+      "importance_score": -0.05291,
+      "std": 0.00305
+    },
+    {
+      "feature": "low_level_jet_proxy",
+      "importance_score": -0.05329,
+      "std": 0.00036
+    },
+    {
+      "feature": "nwp_wind_diff",
+      "importance_score": -0.0537,
+      "std": 0.00031
+    },
+    {
+      "feature": "lag_2_rain",
+      "importance_score": -0.05381,
+      "std": 3e-05
+    },
+    {
+      "feature": "hour",
+      "importance_score": -0.0542,
+      "std": 0.00162
+    },
+    {
+      "feature": "orographic_terrain_wind_proxy",
+      "importance_score": -0.05468,
+      "std": 0.00077
+    },
+    {
+      "feature": "moisture_flux_v",
+      "importance_score": -0.0547,
+      "std": 0.00131
+    },
+    {
+      "feature": "temp_2m",
+      "importance_score": -0.05493,
+      "std": 0.00069
+    },
+    {
+      "feature": "moisture_flux_u",
+      "importance_score": -0.05517,
+      "std": 0.00012
+    },
+    {
+      "feature": "dew_point_2m",
+      "importance_score": -0.05517,
+      "std": 0.00038
+    },
+    {
+      "feature": "pressure_msl",
+      "importance_score": -0.05579,
+      "std": 0.00011
+    },
+    {
+      "feature": "u_wind",
+      "importance_score": -0.05621,
+      "std": 0.00016
+    },
+    {
+      "feature": "surface_pressure",
+      "importance_score": -0.05624,
+      "std": 0.00045
+    },
+    {
+      "feature": "nwp_wind_speed",
+      "importance_score": -0.05638,
+      "std": 0.00015
+    },
+    {
+      "feature": "sin_hour",
+      "importance_score": -0.05652,
+      "std": 0.00246
+    },
+    {
+      "feature": "nwp_rain_lag2",
+      "importance_score": -0.05655,
+      "std": 0.00068
+    },
+    {
+      "feature": "surface_msl_pressure_diff",
+      "importance_score": -0.05666,
+      "std": 1e-05
+    },
+    {
+      "feature": "v_wind",
+      "importance_score": -0.05666,
+      "std": 0.00026
+    },
+    {
+      "feature": "elevation",
+      "importance_score": -0.05668,
+      "std": 6e-05
+    },
+    {
+      "feature": "cloud_saturation_index",
+      "importance_score": -0.05696,
+      "std": 0.00171
+    },
+    {
+      "feature": "wind_direction",
+      "importance_score": -0.05705,
+      "std": 0.00137
+    },
+    {
+      "feature": "sin_month",
+      "importance_score": -0.05706,
+      "std": 1e-05
+    },
+    {
+      "feature": "month",
+      "importance_score": -0.05709,
+      "std": 1e-05
+    },
+    {
+      "feature": "wind_shear_sq",
+      "importance_score": -0.05709,
+      "std": 0.0
+    },
+    {
+      "feature": "nwp_rain_sq",
+      "importance_score": -0.05709,
+      "std": 0.0
+    },
+    {
+      "feature": "log_nwp_rain",
+      "importance_score": -0.05709,
+      "std": 0.0
+    },
+    {
+      "feature": "coastal_distance_proxy",
+      "importance_score": -0.05709,
+      "std": 0.0
+    },
+    {
+      "feature": "wind_speed",
+      "importance_score": -0.05713,
+      "std": 0.00034
+    },
+    {
+      "feature": "cos_month",
+      "importance_score": -0.05715,
+      "std": 1e-05
+    },
+    {
+      "feature": "nwp_temp_diff",
+      "importance_score": -0.05734,
+      "std": 0.00073
+    },
+    {
+      "feature": "relative_humidity",
+      "importance_score": -0.05746,
+      "std": 7e-05
+    },
+    {
+      "feature": "convective_instability",
+      "importance_score": -0.05793,
+      "std": 0.00087
+    },
+    {
+      "feature": "orographic_lift_vector",
+      "importance_score": -0.05799,
+      "std": 0.00068
+    },
+    {
+      "feature": "nwp_pressure_diff",
+      "importance_score": -0.05827,
+      "std": 0.00062
+    },
+    {
+      "feature": "cloud_cover",
+      "importance_score": -0.05829,
+      "std": 0.00058
+    },
+    {
+      "feature": "latitude",
+      "importance_score": -0.05831,
+      "std": 0.00046
+    },
+    {
+      "feature": "orographic_nwp_interaction",
+      "importance_score": -0.05981,
+      "std": 0.00031
+    },
+    {
+      "feature": "pressure_msl_diff6h",
+      "importance_score": -0.06053,
+      "std": 0.00096
+    },
+    {
+      "feature": "dew_point_depression",
+      "importance_score": -0.06104,
+      "std": 0.00169
+    },
+    {
+      "feature": "tcwv",
+      "importance_score": -0.06362,
+      "std": 0.00123
+    },
+    {
+      "feature": "nwp_rain_ratio",
+      "importance_score": -0.06526,
+      "std": 0.00126
+    },
+    {
+      "feature": "saturation_vapor_pressure_deficit",
+      "importance_score": -0.06753,
+      "std": 0.00038
+    },
+    {
+      "feature": "nwp_temp",
+      "importance_score": -0.07241,
+      "std": 0.00943
+    },
+    {
+      "feature": "nwp_saturation_deficit",
+      "importance_score": -0.07534,
+      "std": 0.0004
+    }
+  ],
+  "ablation_study": [
+    {
+      "experiment": "A. Raw NWP Baseline",
+      "model_type": "NWP Direct",
+      "rmse": 2.1377,
+      "mae": 1.5235,
+      "bias": -1.0201,
+      "r2": 0.8894,
+      "rmse_imp_pct": 0.0
+    },
+    {
+      "experiment": "B. Linear MOS / Statistical",
+      "model_type": "Ridge Regression",
+      "rmse": 1.2696,
+      "mae": 0.9628,
+      "bias": -0.0001,
+      "r2": 0.961,
+      "rmse_imp_pct": 40.61
+    },
+    {
+      "experiment": "C. Selected Global ML",
+      "model_type": "Weighted Blend Ensemble",
+      "rmse": 1.2109,
+      "mae": 0.9094,
+      "bias": 0.0244,
+      "r2": 0.9645,
+      "rmse_imp_pct": 43.35
+    },
+    {
+      "experiment": "D. Regime-Aware ML",
+      "model_type": "Classifier + Per-Regime ML",
+      "rmse": 1.2186,
+      "mae": 0.9129,
+      "bias": 0.067,
+      "r2": 0.9641,
+      "rmse_imp_pct": 42.99
+    },
+    {
+      "experiment": "E. District-Aware ML",
+      "model_type": "District-Specific Ensemble",
+      "rmse": 1.2186,
+      "mae": 0.9129,
+      "bias": 0.067,
+      "r2": 0.9641,
+      "rmse_imp_pct": 42.99
+    }
+  ]
+}

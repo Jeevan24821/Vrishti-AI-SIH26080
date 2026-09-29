@@ -1,0 +1,28 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Expo
+.expo/
+.expo-shared/
+dist/
+web-build/
+
+# Native builds (CNG - Continuous Native Generation for EAS)
+android/
+ios/
+
+# Debug and Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Environment variables
+.env*.local
+
+# macOS / Windows system files
+.DS_Store
+*.pem
+Thumbs.db

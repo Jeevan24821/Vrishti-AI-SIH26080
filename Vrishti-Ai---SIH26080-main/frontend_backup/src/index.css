@@ -1,0 +1,268 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    font-size: 16px;
+  }
+  body {
+    margin: 0;
+    background-color: #f4f7fb;
+    background-image: 
+      radial-gradient(at 15% 10%, rgba(37, 99, 235, 0.04) 0px, transparent 50%),
+      radial-gradient(at 85% 90%, rgba(79, 70, 229, 0.04) 0px, transparent 50%);
+    color: #0f172a;
+    font-family: 'Plus Jakarta Sans', 'Inter', system-ui, -apple-system, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 0.9375rem; /* 15px base body text */
+    line-height: 1.5;
+  }
+}
+
+/* Global CSS Variables & Design Tokens */
+:root {
+  --color-bg: #f4f7fb;
+  --color-surface: #ffffff;
+  --color-surface-glass: rgba(255, 255, 255, 0.95);
+  --color-text-primary: #020617;
+  --color-text-secondary: #1e293b;
+  --color-text-muted: #475569;
+  --color-border: #cbd5e1;
+  --color-primary: #2563eb;
+  --color-accent: #4f46e5;
+  --color-success: #059669;
+  --color-warning: #d97706;
+  --color-danger: #dc2626;
+}
+
+/* Operational Command Center Glass & Card System */
+.glass-card {
+  background: rgba(255, 255, 255, 0.96);
+  border: 1px solid #cbd5e1;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.06);
+  border-radius: 18px;
+  transition: all 0.2s ease-in-out;
+}
+
+.glass-card-hover {
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-card-hover:hover {
+  background: #ffffff;
+  border-color: rgba(99, 102, 241, 0.6);
+  box-shadow: 0 14px 40px rgba(37, 99, 235, 0.14);
+  transform: translateY(-2px);
+}
+
+.dark-glass-card {
+  background: rgba(15, 23, 42, 0.98);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 18px;
+  box-shadow: 0 12px 36px rgba(0, 0, 0, 0.35);
+}
+
+/* Opaque Content Layer Card */
+.content-card {
+  background: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 18px;
+  box-shadow: 0 4px 20px rgba(15, 23, 42, 0.05);
+}
+
+/* WCAG Compliant High Contrast Typography */
+.text-main-navy {
+  color: #020617;
+}
+
+.text-sub-slate {
+  color: #1e293b;
+}
+
+.text-accent-blue {
+  color: #1d4ed8;
+}
+
+.text-accent-emerald {
+  color: #047857;
+}
+
+.text-accent-violet {
+  color: #6d28d9;
+}
+
+/* Table High-Contrast System */
+.droit-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+.droit-table th {
+  background-color: #0f172a;
+  color: #ffffff;
+  font-weight: 800;
+  font-size: 0.875rem; /* 14px */
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 1rem 1.25rem;
+}
+
+.droit-table td {
+  padding: 1rem 1.25rem;
+  font-size: 0.9375rem; /* 15px */
+  color: #0f172a;
+  font-weight: 600;
+  border-bottom: 1px solid #cbd5e1;
+}
+
+.droit-table tr:nth-child(even) td {
+  background-color: #f8fafc;
+}
+
+.droit-table tr:hover td {
+  background-color: #eff6ff;
+}
+
+.droit-table tr.highlight-row td {
+  background-color: #dbeafe;
+  border-left: 4px solid #2563eb;
+  font-weight: 800;
+  color: #1e3a8a;
+}
+
+/* Custom Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #e2e8f0;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #64748b;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2563eb;
+}
+
+/* VRISHTI Adaptive Environment Dynamic Engine Styles */
+.bg-blueprint-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(99, 102, 241, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(99, 102, 241, 0.08) 1px, transparent 1px);
+}
+
+.bg-field-pattern {
+  background-size: 40px 40px;
+  background-image: 
+    radial-gradient(circle, rgba(16, 185, 129, 0.08) 1px, transparent 1px);
+}
+
+.bg-highway-grid {
+  background-size: 48px 48px;
+  background-image: 
+    linear-gradient(to right, rgba(244, 63, 94, 0.06) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(244, 63, 94, 0.02) 1px, transparent 1px);
+}
+
+.animate-rain-light {
+  animation: rainFall 1.8s linear infinite;
+}
+
+.animate-rain-heavy {
+  animation: rainFall 0.9s linear infinite;
+}
+
+.animate-mist-drift {
+  animation: mistDrift 16s ease-in-out infinite;
+}
+
+.animate-thunder-flash {
+  animation: thunderFlash 6s ease-in-out infinite;
+}
+
+.animate-radar-pulse {
+  animation: radarPulse 3s ease-out infinite;
+}
+
+@keyframes rainFall {
+  0% {
+    transform: translateY(-80px) translateX(-20px);
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.7;
+  }
+  100% {
+    transform: translateY(800px) translateX(60px);
+    opacity: 0;
+  }
+}
+
+@keyframes mistDrift {
+  0% {
+    transform: translateX(-4%) translateY(0);
+  }
+  50% {
+    transform: translateX(4%) translateY(-10px);
+  }
+  100% {
+    transform: translateX(-4%) translateY(0);
+  }
+}
+
+@keyframes thunderFlash {
+  0%, 93%, 95%, 100% {
+    opacity: 0;
+  }
+  94% {
+    opacity: 0.25;
+  }
+}
+
+@keyframes radarPulse {
+  0% {
+    transform: scale(0.85);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(1.35);
+    opacity: 0;
+  }
+}
+
+/* Custom Leaflet Tooltip & Popup Styling for Weather Geospatial Map */
+.leaflet-tooltip.custom-weather-tooltip {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  padding: 0 !important;
+}
+
+.leaflet-tooltip.custom-weather-tooltip::before {
+  border-top-color: rgba(2, 6, 23, 0.95) !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 20px !important;
+  box-shadow: 0 20px 45px rgba(15, 23, 42, 0.2) !important;
+  border: 1px solid #cbd5e1 !important;
+  padding: 0 !important;
+  overflow: hidden;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  line-height: 1.4 !important;
+}
+

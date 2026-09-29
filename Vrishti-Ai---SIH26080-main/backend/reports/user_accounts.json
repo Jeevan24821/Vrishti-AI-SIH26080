@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Dr. Chandrashekar Poojary",
+    "email": "dr.poojary@vrishti-ai.org",
+    "password": "password123",
+    "role": "Senior Meteorological Officer",
+    "dpUrl": "https://unavatar.io/dr.poojary@vrishti-ai.org?fallback=https://ui-avatars.com/api/?name=Dr+Poojary&background=4f46e5&color=fff&bold=true"
+  },
+  {
+    "name": "Dr. Chandrashekar Poojary",
+    "email": "c.poojary@vrishti-ai.org",
+    "password": "password123",
+    "role": "Senior Meteorological Officer",
+    "dpUrl": "https://unavatar.io/c.poojary@vrishti-ai.org?fallback=https://ui-avatars.com/api/?name=Chandrashekar+Poojary&background=4f46e5&color=fff&bold=true"
+  },
+  {
+    "name": "Operational Specialist",
+    "email": "meteorologist@vrishti-ai.org",
+    "password": "password123",
+    "role": "IMD Meteorological Analyst",
+    "dpUrl": "https://unavatar.io/meteorologist@vrishti-ai.org?fallback=https://ui-avatars.com/api/?name=Meteorologist&background=0284c7&color=fff&bold=true"
+  },
+  {
+    "name": "System Admin",
+    "email": "admin@vrishti-ai.org",
+    "password": "password123",
+    "role": "System Administrator",
+    "dpUrl": "https://unavatar.io/admin@vrishti-ai.org?fallback=https://ui-avatars.com/api/?name=Admin&background=059669&color=fff&bold=true"
+  },
+  {
+    "name": "S V MONIESH REDDY",
+    "email": "monieshzeus@gmail.com",
+    "password": "12345678",
+    "role": "Senior Meteorologist",
+    "dpUrl": "https://unavatar.io/monieshzeus@gmail.com?fallback=https://ui-avatars.com/api/?name=S+V+MONIESH+REDDY&background=4f46e5&color=fff&bold=true"
+  },
+  {
+    "name": "Dr. Jeevan",
+    "email": "poojaryjeevan24@gmail.com",
+    "password": "Csj@240206",
+    "role": "Meteorological Officer",
+    "dpUrl": "https://unavatar.io/poojaryjeevan24@gmail.com?fallback=https://ui-avatars.com/api/?name=Dr.+Jeevan&background=4f46e5&color=fff&bold=true"
+  },
+  {
+    "name": "Jeevan C Amin",
+    "email": "poojaryjeevan@gmail.com",
+    "password": "123",
+    "role": "Senior Meteorologist",
+    "dpUrl": "https://unavatar.io/poojaryjeevan@gmail.com?fallback=https://ui-avatars.com/api/?name=Jeevan+C+Amin&background=4f46e5&color=fff&bold=true"
+  },
+  {
+    "name": "Kundan - Hacker",
+    "email": "123@gmail.com",
+    "password": "123",
+    "role": "SIH Jury Evaluator",
+    "dpUrl": "https://unavatar.io/123@gmail.com?fallback=https://ui-avatars.com/api/?name=Kundan+-+Hacker&background=4f46e5&color=fff&bold=true"
+  }
+]

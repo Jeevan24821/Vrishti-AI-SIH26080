@@ -1,0 +1,253 @@
+{
+  "name": "VRISHTI AI Conversation Intelligence v2",
+  "purpose": "Improve weather intent detection, location/date extraction, contextual follow-ups, safety routing, and verification routing for Goa, Karnataka and Kerala.",
+  "critical_rules": [
+    "Use the full query plus conversation context to determine intent.",
+    "Never default state to Karnataka or district to Manual unless explicitly selected or correctly inherited.",
+    "Keep semantic intent separate from the UI sector.",
+    "Treat flood, flooding, waterlogging, landslide, driving, travel, farming and construction as weather-domain requests when they are conditioned on rainfall/weather.",
+    "Resolve today, now, tonight, tomorrow, day after tomorrow, next 3 days and this week.",
+    "Follow-up questions inherit the previous valid location, date, topic and station unless the user changes them.",
+    "Never fabricate forecast, probability or verification values.",
+    "If data is unavailable, report the exact data/service problem instead of changing the user's intent."
+  ],
+  "intents": {
+    "CURRENT_WEATHER": [
+      "what is the weather in Bengaluru today",
+      "how is the weather in Bengaluru Urban today",
+      "what's the weather in Panaji right now",
+      "current weather in Kochi",
+      "is it raining in Mangaluru now",
+      "what are the current conditions in Wayanad"
+    ],
+    "WEATHER_FORECAST": [
+      "what will the weather be tomorrow in Bengaluru",
+      "weather forecast for Kochi tomorrow",
+      "forecast for Panaji for the next 3 days",
+      "how will the weather be this weekend in Kerala"
+    ],
+    "RAINFALL_FORECAST": [
+      "how much rain is expected in Bengaluru tomorrow",
+      "rainfall forecast for Panaji",
+      "will it rain tomorrow in Kochi",
+      "expected rainfall in Mangaluru",
+      "rain forecast for the next 24 hours"
+    ],
+    "RAIN_PROBABILITY": [
+      "what is the chance of rain in Bengaluru today",
+      "probability of rainfall in Panaji tomorrow",
+      "what are the chances of rain in Kochi",
+      "percentage chance of rain tomorrow"
+    ],
+    "HEAVY_RAIN_ALERT": [
+      "is heavy rain expected in Panaji today",
+      "will there be extreme rainfall in Kerala",
+      "is there a heavy rain warning for Mangaluru",
+      "is intense rain expected in Wayanad"
+    ],
+    "FLOOD_RISK": [
+      "is there flood risk in Panaji today",
+      "is there flooding in Panaji today",
+      "are floods expected in Kochi",
+      "will heavy rain cause flooding in Mangaluru",
+      "is waterlogging likely in Panaji",
+      "is there a flood warning"
+    ],
+    "THUNDERSTORM_LIGHTNING": [
+      "will there be thunderstorms in Bengaluru tonight",
+      "is lightning expected in Panaji",
+      "any thunderstorm risk in Kerala tomorrow"
+    ],
+    "WIND_CONDITIONS": [
+      "how strong will the winds be tomorrow in Panaji",
+      "wind speed in Bengaluru today",
+      "are strong winds expected in Kerala"
+    ],
+    "TEMPERATURE": [
+      "what is the temperature in Bengaluru today",
+      "how hot will it be in Panaji tomorrow",
+      "temperature forecast for Kochi",
+      "minimum temperature tonight"
+    ],
+    "HUMIDITY": [
+      "what is the humidity in Bengaluru",
+      "humidity forecast for Kochi tomorrow"
+    ],
+    "AGRICULTURE_WEATHER": [
+      "is the weather suitable for farming tomorrow",
+      "will rain affect crops in Kerala",
+      "should farmers expect heavy rain",
+      "is there a dry window for harvesting"
+    ],
+    "CONSTRUCTION_WEATHER_SAFETY": [
+      "is tomorrow suitable for construction work in Bengaluru",
+      "will rain affect construction in Panaji",
+      "will strong winds affect crane operations"
+    ],
+    "HILL_TRAVEL_SAFETY": [
+      "is it safe to travel to Wayanad tomorrow because of rain",
+      "landslide risk in Kodagu",
+      "will heavy rain affect hill travel in Kerala",
+      "is the road to Munnar dangerous due to rain"
+    ],
+    "HIGHWAY_DRIVING_WEATHER": [
+      "is it safe to drive on the highway tomorrow in Karnataka",
+      "will rain reduce visibility on the road",
+      "is heavy rain expected while driving from Bengaluru to Mangaluru"
+    ],
+    "CITY_DRAINAGE_RAINFALL": [
+      "will there be waterlogging in Bengaluru today",
+      "is heavy rain likely to overwhelm city drainage",
+      "urban flooding risk in Panaji"
+    ],
+    "WEATHER_REGIME": [
+      "what weather regime is active",
+      "is this an active monsoon or break period",
+      "what is the current rainfall regime",
+      "is this associated with a depression"
+    ],
+    "DISTRICT_FORECAST": [
+      "give me district level rainfall for Karnataka",
+      "forecast rainfall by district in Kerala",
+      "which districts are expected to receive heavy rain"
+    ],
+    "GRID_FORECAST": [
+      "show the rainfall grid for Karnataka",
+      "give me grid level rainfall",
+      "show forecast on the map"
+    ],
+    "MODEL_VERIFICATION": [
+      "show RMSE for Karnataka",
+      "what is the FAR for Kerala",
+      "show CSI POD FAR and FSS",
+      "compare corrected rainfall with ground truth",
+      "show verification metrics",
+      "compare NWP with corrected forecast"
+    ],
+    "MODEL_COMPARISON": [
+      "compare NWP and corrected rainfall",
+      "is corrected forecast closer to observations",
+      "compare model performance before and after bias correction"
+    ],
+    "NON_WEATHER": [
+      "tell me a joke",
+      "what is the capital of France",
+      "write a Python program"
+    ]
+  },
+  "locations": {
+    "Goa": [
+      "Panaji",
+      "Tiswadi",
+      "Vasco da Gama",
+      "Margao",
+      "Mapusa",
+      "Ponda",
+      "Calangute",
+      "Candolim",
+      "Porvorim"
+    ],
+    "Karnataka": [
+      "Bengaluru",
+      "Bengaluru Urban",
+      "Bangalore",
+      "Mangaluru",
+      "Mysuru",
+      "Udupi",
+      "Kodagu",
+      "Madikeri",
+      "Chikkamagaluru",
+      "Shivamogga",
+      "Hassan",
+      "Belagavi",
+      "Hubballi",
+      "Dharwad",
+      "Tumakuru",
+      "Dakshina Kannada",
+      "Uttara Kannada",
+      "Coorg",
+      "Agumbe"
+    ],
+    "Kerala": [
+      "Thiruvananthapuram",
+      "Kochi",
+      "Ernakulam",
+      "Kozhikode",
+      "Kannur",
+      "Thrissur",
+      "Kollam",
+      "Alappuzha",
+      "Kottayam",
+      "Idukki",
+      "Wayanad",
+      "Palakkad",
+      "Malappuram",
+      "Pathanamthitta",
+      "Munnar"
+    ]
+  },
+  "date_terms": {
+    "today": "CURRENT_DAY",
+    "now": "CURRENT_TIME",
+    "tonight": "CURRENT_DAY_NIGHT",
+    "tomorrow": "NEXT_DAY",
+    "day after tomorrow": "NEXT_2_DAYS",
+    "next 3 days": "NEXT_3_DAYS",
+    "next three days": "NEXT_3_DAYS",
+    "next 5 days": "NEXT_5_DAYS",
+    "next week": "NEXT_WEEK",
+    "this week": "CURRENT_WEEK"
+  },
+  "required_debug_trace": [
+    "submittedQuery",
+    "normalizedQuery",
+    "detectedIntent",
+    "confidence",
+    "detectedState",
+    "detectedDistrict",
+    "resolvedLocation",
+    "resolvedDate",
+    "resolvedTimeRange",
+    "detectedWeatherVariable",
+    "selectedSector",
+    "dataSource",
+    "requestStatus",
+    "latencyMs"
+  ],
+  "known_failures_to_prevent": [
+    "\"how is the weather in bengaluru urban today?\" must not become ERROR",
+    "\"is there floods in panaji today?\" must not become NON_WEATHER",
+    "Do not assign Karnataka when no Karnataka location is present.",
+    "Do not assign Manual when a known city/district can be resolved.",
+    "Do not let the selected sector override semantic intent.",
+    "Do not lose context on follow-up questions."
+  ],
+  "evaluation": {
+    "minimum_test_cases": 60,
+    "must_include": [
+      "current weather",
+      "forecast",
+      "rainfall",
+      "rain probability",
+      "heavy rain",
+      "flood risk",
+      "thunderstorm",
+      "wind",
+      "temperature",
+      "humidity",
+      "agriculture",
+      "construction",
+      "hill travel",
+      "highway driving",
+      "city drainage",
+      "weather regime",
+      "district forecast",
+      "grid forecast",
+      "model verification",
+      "model comparison",
+      "contextual follow-ups",
+      "missing location",
+      "backend failure"
+    ]
+  }
+}

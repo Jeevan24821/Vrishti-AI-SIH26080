@@ -1,0 +1,6 @@
+experiment,model_type,rmse,mae,bias,r2,rmse_imp_pct
+A. Raw NWP Baseline,NWP Direct,2.1377,1.5235,-1.0201,0.8894,0.0
+B. Linear MOS / Statistical,Ridge Regression,1.2696,0.9628,-0.0001,0.961,40.61
+C. Selected Global ML,Weighted Blend Ensemble,1.2109,0.9094,0.0244,0.9645,43.35
+D. Regime-Aware ML,Classifier + Per-Regime ML,1.2186,0.9129,0.067,0.9641,42.99
+E. District-Aware ML,District-Specific Ensemble,1.2186,0.9129,0.067,0.9641,42.99

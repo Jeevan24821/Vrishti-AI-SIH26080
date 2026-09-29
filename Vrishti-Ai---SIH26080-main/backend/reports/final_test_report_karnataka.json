@@ -1,0 +1,3830 @@
+{
+  "timestamp": "2026-09-26T18:05:22.574449",
+  "experiment_id": "EXP_003_MULTI_STATE_2020_2025_KARNATAKA",
+  "file_metadata": {
+    "state": "Karnataka",
+    "filename": "KARNATAKA_CLEAN.csv",
+    "filepath": "C:\\Users\\ChandrashekarPoojary\\Downloads\\Moniesh X G1 SIH\\Vrishti-Ai---SIH26080-main\\data\\KARNATAKA_CLEAN.csv",
+    "sha256": "50cf1e6495268078e640049bc17a4ccaef20a9b950453b969d2c2e9616503486",
+    "file_size_bytes": 21463617,
+    "total_rows": 113832,
+    "total_columns": 29,
+    "columns": [
+      "location_id",
+      "time",
+      "date",
+      "time_ist",
+      "hour_ist",
+      "district_name",
+      "taluka_name",
+      "district_code",
+      "latitude",
+      "longitude",
+      "elevation (m)",
+      "temperature_2m (\u00b0C)",
+      "rain_6h_accum (mm)",
+      "dew_point_2m (\u00b0C)",
+      "relative_humidity_2m (%)",
+      "pressure_msl (hPa)",
+      "surface_pressure (hPa)",
+      "cloud_cover (%)",
+      "wind_direction_10m (\u00b0)",
+      "wind_speed_10m (km/h)",
+      "boundary_layer_height (m)",
+      "total_column_integrated_water_vapour (kg/m\u00b2)",
+      "raw_nwp_rain_6h_forecast (mm)",
+      "raw_nwp_temp_forecast (\u00b0C)",
+      "raw_nwp_pressure_msl_forecast (hPa)",
+      "raw_nwp_wind_speed_forecast (km/h)",
+      "regime_id",
+      "state",
+      "datetime"
+    ]
+  },
+  "provenance": {
+    "state": "Karnataka",
+    "filename": "KARNATAKA_CLEAN.csv",
+    "dataset_hash_sha256": "50cf1e6495268078e640049bc17a4ccaef20a9b950453b969d2c2e9616503486",
+    "total_rows": 113832,
+    "train_years": [
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "train_rows": 75888,
+    "val_years": [
+      2024
+    ],
+    "val_rows": 18972,
+    "test_years": [
+      2025
+    ],
+    "test_rows": 18972,
+    "features_count": 60,
+    "feature_names": [
+      "nwp_rain",
+      "log_nwp_rain",
+      "nwp_temp",
+      "nwp_pressure",
+      "nwp_wind_speed",
+      "temp_2m",
+      "pressure_msl",
+      "wind_speed",
+      "dew_point_2m",
+      "relative_humidity",
+      "surface_pressure",
+      "cloud_cover",
+      "wind_direction",
+      "boundary_layer_height",
+      "tcwv",
+      "lag_1_rain",
+      "lag_2_rain",
+      "lag_1_temp",
+      "latitude",
+      "longitude",
+      "elevation",
+      "month",
+      "day_of_year",
+      "hour",
+      "sin_month",
+      "cos_month",
+      "sin_hour",
+      "cos_hour",
+      "dew_point_depression",
+      "nwp_temp_diff",
+      "nwp_pressure_diff",
+      "nwp_wind_diff",
+      "u_wind",
+      "v_wind",
+      "orographic_terrain_wind_proxy",
+      "convective_moisture_flux",
+      "convective_instability",
+      "cloud_saturation_index",
+      "orographic_lift_vector",
+      "coastal_distance_proxy",
+      "nwp_evap_bias_proxy",
+      "nwp_saturation_deficit",
+      "nwp_rain_sq",
+      "nwp_rain_tcwv",
+      "nwp_rain_rh",
+      "moisture_flux_u",
+      "moisture_flux_v",
+      "wind_shear_sq",
+      "thermo_heavy_rain_potential",
+      "orographic_nwp_interaction",
+      "saturation_vapor_pressure_deficit",
+      "surface_msl_pressure_diff",
+      "low_level_jet_proxy",
+      "coastal_moisture_lift",
+      "nwp_rain_lag1",
+      "nwp_rain_lag2",
+      "nwp_rain_roll24h_mean",
+      "nwp_rain_roll24h_max",
+      "nwp_rain_ratio",
+      "pressure_msl_diff6h"
+    ],
+    "selected_global_model": "HistGradientBoosting",
+    "district_models_count": 0,
+    "training_timestamp": "2026-09-26T18:05:22.574449",
+    "system_version": "VRISHTI AI 2.0 Reproducible Scientific Bias Correction System"
+  },
+  "dataset_audit": {
+    "file_metadata": {
+      "state": "Karnataka",
+      "filename": "KARNATAKA_CLEAN.csv",
+      "filepath": "C:\\Users\\ChandrashekarPoojary\\Downloads\\Moniesh X G1 SIH\\Vrishti-Ai---SIH26080-main\\data\\KARNATAKA_CLEAN.csv",
+      "sha256": "50cf1e6495268078e640049bc17a4ccaef20a9b950453b969d2c2e9616503486",
+      "file_size_bytes": 21463617,
+      "total_rows": 113832,
+      "total_columns": 29,
+      "columns": [
+        "location_id",
+        "time",
+        "date",
+        "time_ist",
+        "hour_ist",
+        "district_name",
+        "taluka_name",
+        "district_code",
+        "latitude",
+        "longitude",
+        "elevation (m)",
+        "temperature_2m (\u00b0C)",
+        "rain_6h_accum (mm)",
+        "dew_point_2m (\u00b0C)",
+        "relative_humidity_2m (%)",
+        "pressure_msl (hPa)",
+        "surface_pressure (hPa)",
+        "cloud_cover (%)",
+        "wind_direction_10m (\u00b0)",
+        "wind_speed_10m (km/h)",
+        "boundary_layer_height (m)",
+        "total_column_integrated_water_vapour (kg/m\u00b2)",
+        "raw_nwp_rain_6h_forecast (mm)",
+        "raw_nwp_temp_forecast (\u00b0C)",
+        "raw_nwp_pressure_msl_forecast (hPa)",
+        "raw_nwp_wind_speed_forecast (km/h)",
+        "regime_id",
+        "state",
+        "datetime"
+      ]
+    },
+    "total_rows": 113832,
+    "total_columns": 29,
+    "missing_values": {
+      "location_id": 0,
+      "time": 0,
+      "date": 0,
+      "time_ist": 0,
+      "hour_ist": 0,
+      "district_name": 0,
+      "taluka_name": 0,
+      "district_code": 0,
+      "latitude": 0,
+      "longitude": 0,
+      "elevation (m)": 0,
+      "temperature_2m (\u00b0C)": 0,
+      "rain_6h_accum (mm)": 0,
+      "dew_point_2m (\u00b0C)": 0,
+      "relative_humidity_2m (%)": 0,
+      "pressure_msl (hPa)": 0,
+      "surface_pressure (hPa)": 0,
+      "cloud_cover (%)": 0,
+      "wind_direction_10m (\u00b0)": 0,
+      "wind_speed_10m (km/h)": 0,
+      "boundary_layer_height (m)": 0,
+      "total_column_integrated_water_vapour (kg/m\u00b2)": 0,
+      "raw_nwp_rain_6h_forecast (mm)": 0,
+      "raw_nwp_temp_forecast (\u00b0C)": 0,
+      "raw_nwp_pressure_msl_forecast (hPa)": 0,
+      "raw_nwp_wind_speed_forecast (km/h)": 0,
+      "regime_id": 0,
+      "state": 0,
+      "datetime": 0
+    },
+    "total_missing": 0,
+    "duplicate_rows": 0,
+    "duplicate_station_time": 0,
+    "date_range": {
+      "min": "01-06-2020",
+      "max": "31-10-2025"
+    },
+    "unique_dates": 918,
+    "unique_timestamps": 3672,
+    "unique_stations": 31,
+    "unique_districts": 31,
+    "station_record_counts": {
+      "LOC_KA_01": 3672,
+      "LOC_KA_02": 3672,
+      "LOC_KA_03": 3672,
+      "LOC_KA_04": 3672,
+      "LOC_KA_05": 3672,
+      "LOC_KA_06": 3672,
+      "LOC_KA_07": 3672,
+      "LOC_KA_08": 3672,
+      "LOC_KA_09": 3672,
+      "LOC_KA_10": 3672,
+      "LOC_KA_11": 3672,
+      "LOC_KA_12": 3672,
+      "LOC_KA_13": 3672,
+      "LOC_KA_14": 3672,
+      "LOC_KA_15": 3672,
+      "LOC_KA_16": 3672,
+      "LOC_KA_17": 3672,
+      "LOC_KA_18": 3672,
+      "LOC_KA_19": 3672,
+      "LOC_KA_20": 3672,
+      "LOC_KA_21": 3672,
+      "LOC_KA_22": 3672,
+      "LOC_KA_23": 3672,
+      "LOC_KA_24": 3672,
+      "LOC_KA_25": 3672,
+      "LOC_KA_26": 3672,
+      "LOC_KA_27": 3672,
+      "LOC_KA_28": 3672,
+      "LOC_KA_29": 3672,
+      "LOC_KA_30": 3672,
+      "LOC_KA_31": 3672
+    },
+    "district_record_counts": {
+      "Bagalkot": 3672,
+      "Ballari": 3672,
+      "Belagavi": 3672,
+      "Bengaluru Rural": 3672,
+      "Bengaluru Urban": 3672,
+      "Bidar": 3672,
+      "Chamarajanagar": 3672,
+      "Chikkaballapura": 3672,
+      "Chikkamagaluru": 3672,
+      "Chitradurga": 3672,
+      "Dakshina Kannada": 3672,
+      "Davanagere": 3672,
+      "Dharwad": 3672,
+      "Gadag": 3672,
+      "Hassan": 3672,
+      "Haveri": 3672,
+      "Kalaburagi": 3672,
+      "Kodagu": 3672,
+      "Kolar": 3672,
+      "Koppal": 3672,
+      "Mandya": 3672,
+      "Mysuru": 3672,
+      "Raichur": 3672,
+      "Ramanagara": 3672,
+      "Shivamogga": 3672,
+      "Tumakuru": 3672,
+      "Udupi": 3672,
+      "Uttara Kannada": 3672,
+      "Vijayanagara": 3672,
+      "Vijayapura": 3672,
+      "Yadgir": 3672
+    },
+    "year_record_counts": {
+      "2020": 18972,
+      "2021": 18972,
+      "2022": 18972,
+      "2023": 18972,
+      "2024": 18972,
+      "2025": 18972
+    },
+    "month_record_counts": {
+      "6": 22320,
+      "7": 23064,
+      "8": 23064,
+      "9": 22320,
+      "10": 23064
+    },
+    "period_6h_counts": {
+      "0": 28458,
+      "6": 28458,
+      "12": 28458,
+      "18": 28458
+    },
+    "regime_record_counts": {
+      "2": 23064,
+      "5": 23064,
+      "3": 23064,
+      "1": 22320,
+      "4": 22320
+    },
+    "observed_rainfall_stats": {
+      "min": 0.0,
+      "max": 122.7,
+      "mean": 1.8019713261648747,
+      "median": 0.3,
+      "std": 3.8892206994161027,
+      "p90": 5.5,
+      "p95": 8.9,
+      "p99": 17.8,
+      "zero_count": 39877,
+      "event_counts": {
+        "light_ge_2_5": 23309,
+        "moderate_ge_15_6": 1650,
+        "heavy_ge_64_5": 23,
+        "very_heavy_ge_115_5": 2
+      }
+    },
+    "nwp_rainfall_stats": {
+      "min": 0.0,
+      "max": 144.16435193904888,
+      "mean": 3.329769842658594,
+      "median": 1.467411468445208,
+      "std": 5.45079836092704,
+      "p90": 8.666536288967636,
+      "p95": 12.731019436399453,
+      "p99": 24.67789536048799
+    },
+    "quality_audit": {
+      "missing_values_pass": true,
+      "duplicate_rows_pass": true,
+      "duplicate_station_time_pass": true,
+      "non_negative_obs_pass": true,
+      "non_negative_nwp_pass": true,
+      "relative_humidity_pass": true,
+      "cloud_cover_pass": true
+    }
+  },
+  "split_metadata": {
+    "train": {
+      "years": [
+        2020,
+        2021,
+        2022,
+        2023
+      ],
+      "rows": 75888,
+      "start_date": "01-06-2020",
+      "end_date": "31-10-2023"
+    },
+    "validation": {
+      "years": [
+        2024
+      ],
+      "rows": 18972,
+      "start_date": "01-06-2024",
+      "end_date": "31-10-2024"
+    },
+    "test": {
+      "years": [
+        2025
+      ],
+      "rows": 18972,
+      "start_date": "01-06-2025",
+      "end_date": "31-10-2025"
+    },
+    "unseen": {
+      "years": [],
+      "rows": 0,
+      "start_date": "nan",
+      "end_date": "nan"
+    }
+  },
+  "selected_global_model": "HistGradientBoosting",
+  "validation_2024_metrics": {
+    "raw_nwp": {
+      "n": 18972,
+      "rmse": 3.2701,
+      "mae": 2.096,
+      "bias": 1.5705,
+      "r_corr": 0.8958,
+      "r2": 0.397,
+      "error_diagnosis": {
+        "overprediction_count": 10402,
+        "underprediction_count": 4672,
+        "mean_overprediction_mm": 3.3427,
+        "mean_underprediction_mm": -1.0516
+      }
+    },
+    "linear_mos": {
+      "n": 18972,
+      "rmse": 1.479,
+      "mae": 0.9374,
+      "bias": 0.129,
+      "r_corr": 0.9369,
+      "r2": 0.8767,
+      "error_diagnosis": {
+        "overprediction_count": 10242,
+        "underprediction_count": 5296,
+        "mean_overprediction_mm": 0.9831,
+        "mean_underprediction_mm": -1.4389
+      },
+      "rmse_improvement_pct": 54.77,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 55.28,
+      "mae_status": "improvement"
+    },
+    "xgb_1000": {
+      "n": 18972,
+      "rmse": 1.3612,
+      "mae": 0.8289,
+      "bias": 0.0872,
+      "r_corr": 0.947,
+      "r2": 0.8955,
+      "error_diagnosis": {
+        "overprediction_count": 10576,
+        "underprediction_count": 5141,
+        "mean_overprediction_mm": 0.8114,
+        "mean_underprediction_mm": -1.3613
+      },
+      "rmse_improvement_pct": 58.37,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 60.45,
+      "mae_status": "improvement"
+    },
+    "xgb_2000": {
+      "n": 18972,
+      "rmse": 1.3747,
+      "mae": 0.8434,
+      "bias": 0.1545,
+      "r_corr": 0.9468,
+      "r2": 0.8934,
+      "error_diagnosis": {
+        "overprediction_count": 10892,
+        "underprediction_count": 4942,
+        "mean_overprediction_mm": 0.8594,
+        "mean_underprediction_mm": -1.3149
+      },
+      "rmse_improvement_pct": 57.96,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 59.76,
+      "mae_status": "improvement"
+    },
+    "hist_gradient_boosting": {
+      "n": 18972,
+      "rmse": 1.3454,
+      "mae": 0.8158,
+      "bias": 0.1081,
+      "r_corr": 0.9483,
+      "r2": 0.8979,
+      "error_diagnosis": {
+        "overprediction_count": 10469,
+        "underprediction_count": 4986,
+        "mean_overprediction_mm": 0.8265,
+        "mean_underprediction_mm": -1.3383
+      },
+      "rmse_improvement_pct": 58.86,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 61.08,
+      "mae_status": "improvement"
+    },
+    "random_forest": {
+      "n": 18972,
+      "rmse": 1.3911,
+      "mae": 0.8532,
+      "bias": 0.0879,
+      "r_corr": 0.9441,
+      "r2": 0.8909,
+      "error_diagnosis": {
+        "overprediction_count": 10222,
+        "underprediction_count": 5183,
+        "mean_overprediction_mm": 0.8597,
+        "mean_underprediction_mm": -1.3931
+      },
+      "rmse_improvement_pct": 57.46,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 59.29,
+      "mae_status": "improvement"
+    },
+    "extra_trees": {
+      "n": 18972,
+      "rmse": 1.3709,
+      "mae": 0.8426,
+      "bias": 0.0677,
+      "r_corr": 0.9457,
+      "r2": 0.894,
+      "error_diagnosis": {
+        "overprediction_count": 10971,
+        "underprediction_count": 5159,
+        "mean_overprediction_mm": 0.7765,
+        "mean_underprediction_mm": -1.4177
+      },
+      "rmse_improvement_pct": 58.08,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 59.8,
+      "mae_status": "improvement"
+    },
+    "regime_aware_ml": {
+      "n": 18972,
+      "rmse": 1.3752,
+      "mae": 0.8284,
+      "bias": 0.0406,
+      "r_corr": 0.9454,
+      "r2": 0.8934,
+      "error_diagnosis": {
+        "overprediction_count": 10332,
+        "underprediction_count": 5328,
+        "mean_overprediction_mm": 0.7867,
+        "mean_underprediction_mm": -1.3949
+      },
+      "rmse_improvement_pct": 57.95,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 60.48,
+      "mae_status": "improvement"
+    }
+  },
+  "test_2025_metrics": {
+    "raw_nwp": {
+      "n": 18972,
+      "rmse": 3.1432,
+      "mae": 2.0441,
+      "bias": 1.516,
+      "r_corr": 0.879,
+      "r2": 0.3765,
+      "error_diagnosis": {
+        "overprediction_count": 10285,
+        "underprediction_count": 4512,
+        "mean_overprediction_mm": 3.2824,
+        "mean_underprediction_mm": -1.0936
+      }
+    },
+    "linear_mos": {
+      "n": 18972,
+      "rmse": 1.451,
+      "mae": 0.8682,
+      "bias": 0.0345,
+      "r_corr": 0.9314,
+      "r2": 0.8671,
+      "error_diagnosis": {
+        "overprediction_count": 9290,
+        "underprediction_count": 5459,
+        "mean_overprediction_mm": 0.9162,
+        "mean_underprediction_mm": -1.4382
+      },
+      "rmse_improvement_pct": 53.84,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 57.53,
+      "mae_status": "improvement"
+    },
+    "xgb_1000": {
+      "n": 18972,
+      "rmse": 1.2923,
+      "mae": 0.7458,
+      "bias": -0.0267,
+      "r_corr": 0.9459,
+      "r2": 0.8946,
+      "error_diagnosis": {
+        "overprediction_count": 9446,
+        "underprediction_count": 5479,
+        "mean_overprediction_mm": 0.7079,
+        "mean_underprediction_mm": -1.3294
+      },
+      "rmse_improvement_pct": 58.89,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 63.52,
+      "mae_status": "improvement"
+    },
+    "xgb_2000": {
+      "n": 18972,
+      "rmse": 1.2967,
+      "mae": 0.7564,
+      "bias": 0.0308,
+      "r_corr": 0.9457,
+      "r2": 0.8939,
+      "error_diagnosis": {
+        "overprediction_count": 9740,
+        "underprediction_count": 5297,
+        "mean_overprediction_mm": 0.7528,
+        "mean_underprediction_mm": -1.2914
+      },
+      "rmse_improvement_pct": 58.75,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 63.0,
+      "mae_status": "improvement"
+    },
+    "hist_gradient_boosting": {
+      "n": 18972,
+      "rmse": 1.2832,
+      "mae": 0.7331,
+      "bias": -0.026,
+      "r_corr": 0.9466,
+      "r2": 0.8961,
+      "error_diagnosis": {
+        "overprediction_count": 9144,
+        "underprediction_count": 5412,
+        "mean_overprediction_mm": 0.7184,
+        "mean_underprediction_mm": -1.3224
+      },
+      "rmse_improvement_pct": 59.18,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 64.13,
+      "mae_status": "improvement"
+    },
+    "random_forest": {
+      "n": 18972,
+      "rmse": 1.3383,
+      "mae": 0.7737,
+      "bias": -0.0165,
+      "r_corr": 0.9418,
+      "r2": 0.887,
+      "error_diagnosis": {
+        "overprediction_count": 9247,
+        "underprediction_count": 5464,
+        "mean_overprediction_mm": 0.7586,
+        "mean_underprediction_mm": -1.3646
+      },
+      "rmse_improvement_pct": 57.42,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 62.15,
+      "mae_status": "improvement"
+    },
+    "extra_trees": {
+      "n": 18972,
+      "rmse": 1.3255,
+      "mae": 0.7692,
+      "bias": -0.0268,
+      "r_corr": 0.943,
+      "r2": 0.8891,
+      "error_diagnosis": {
+        "overprediction_count": 9975,
+        "underprediction_count": 5429,
+        "mean_overprediction_mm": 0.6903,
+        "mean_underprediction_mm": -1.383
+      },
+      "rmse_improvement_pct": 57.83,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 62.37,
+      "mae_status": "improvement"
+    },
+    "selected_global_ml": {
+      "n": 18972,
+      "rmse": 1.2832,
+      "mae": 0.7331,
+      "bias": -0.026,
+      "r_corr": 0.9466,
+      "r2": 0.8961,
+      "error_diagnosis": {
+        "overprediction_count": 9144,
+        "underprediction_count": 5412,
+        "mean_overprediction_mm": 0.7184,
+        "mean_underprediction_mm": -1.3224
+      },
+      "rmse_improvement_pct": 59.18,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 64.13,
+      "mae_status": "improvement"
+    },
+    "regime_aware_ml": {
+      "n": 18972,
+      "rmse": 1.3281,
+      "mae": 0.7619,
+      "bias": -0.0612,
+      "r_corr": 0.9428,
+      "r2": 0.8887,
+      "error_diagnosis": {
+        "overprediction_count": 9297,
+        "underprediction_count": 5575,
+        "mean_overprediction_mm": 0.6995,
+        "mean_underprediction_mm": -1.3921
+      },
+      "rmse_improvement_pct": 57.75,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 62.73,
+      "mae_status": "improvement"
+    },
+    "oracle_regime_ml": {
+      "n": 18972,
+      "rmse": 1.3281,
+      "mae": 0.7619,
+      "bias": -0.0612,
+      "r_corr": 0.9428,
+      "r2": 0.8887,
+      "error_diagnosis": {
+        "overprediction_count": 9297,
+        "underprediction_count": 5575,
+        "mean_overprediction_mm": 0.6995,
+        "mean_underprediction_mm": -1.3921
+      },
+      "rmse_improvement_pct": 57.75,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 62.73,
+      "mae_status": "improvement"
+    },
+    "district_aware_ml": {
+      "n": 18972,
+      "rmse": 1.3281,
+      "mae": 0.7619,
+      "bias": -0.0612,
+      "r_corr": 0.9428,
+      "r2": 0.8887,
+      "error_diagnosis": {
+        "overprediction_count": 9297,
+        "underprediction_count": 5575,
+        "mean_overprediction_mm": 0.6995,
+        "mean_underprediction_mm": -1.3921
+      },
+      "rmse_improvement_pct": 57.75,
+      "rmse_status": "improvement",
+      "mae_improvement_pct": 62.73,
+      "mae_status": "improvement"
+    }
+  },
+  "regime_classifier": {
+    "overall_accuracy": 1.0,
+    "per_regime_metrics": {
+      "1": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "sample_count": 3720,
+        "count": 3720
+      },
+      "2": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "sample_count": 3844,
+        "count": 3844
+      },
+      "3": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "sample_count": 3844,
+        "count": 3844
+      },
+      "4": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "sample_count": 3720,
+        "count": 3720
+      },
+      "5": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "sample_count": 3844,
+        "count": 3844
+      }
+    }
+  },
+  "threshold_metrics": {
+    "light": {
+      "raw_nwp": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 7703,
+        "hits": 3301,
+        "misses": 583,
+        "false_alarms": 4402,
+        "correct_negatives": 10686,
+        "pod": 0.8499,
+        "far": 0.5715,
+        "csi": 0.3984,
+        "ets": 0.257,
+        "fss": 0.5698,
+        "frequency_bias": 1.9833,
+        "rare_event_warning": false
+      },
+      "linear_mos": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3642,
+        "hits": 2828,
+        "misses": 1056,
+        "false_alarms": 814,
+        "correct_negatives": 14274,
+        "pod": 0.7281,
+        "far": 0.2235,
+        "csi": 0.602,
+        "ets": 0.5269,
+        "fss": 0.7515,
+        "frequency_bias": 0.9377,
+        "rare_event_warning": false
+      },
+      "global_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3474,
+        "hits": 2886,
+        "misses": 998,
+        "false_alarms": 588,
+        "correct_negatives": 14500,
+        "pod": 0.743,
+        "far": 0.1693,
+        "csi": 0.6453,
+        "ets": 0.5783,
+        "fss": 0.7845,
+        "frequency_bias": 0.8944,
+        "rare_event_warning": false
+      },
+      "xgb_1000": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3463,
+        "hits": 2849,
+        "misses": 1035,
+        "false_alarms": 614,
+        "correct_negatives": 14474,
+        "pod": 0.7335,
+        "far": 0.1773,
+        "csi": 0.6334,
+        "ets": 0.5648,
+        "fss": 0.7756,
+        "frequency_bias": 0.8916,
+        "rare_event_warning": false
+      },
+      "xgb_2000": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3614,
+        "hits": 2917,
+        "misses": 967,
+        "false_alarms": 697,
+        "correct_negatives": 14391,
+        "pod": 0.751,
+        "far": 0.1929,
+        "csi": 0.6368,
+        "ets": 0.5668,
+        "fss": 0.7781,
+        "frequency_bias": 0.9305,
+        "rare_event_warning": false
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3474,
+        "hits": 2886,
+        "misses": 998,
+        "false_alarms": 588,
+        "correct_negatives": 14500,
+        "pod": 0.743,
+        "far": 0.1693,
+        "csi": 0.6453,
+        "ets": 0.5783,
+        "fss": 0.7845,
+        "frequency_bias": 0.8944,
+        "rare_event_warning": false
+      },
+      "random_forest": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3512,
+        "hits": 2834,
+        "misses": 1050,
+        "false_alarms": 678,
+        "correct_negatives": 14410,
+        "pod": 0.7297,
+        "far": 0.1931,
+        "csi": 0.6212,
+        "ets": 0.5504,
+        "fss": 0.7664,
+        "frequency_bias": 0.9042,
+        "rare_event_warning": false
+      },
+      "extra_trees": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3443,
+        "hits": 2828,
+        "misses": 1056,
+        "false_alarms": 615,
+        "correct_negatives": 14473,
+        "pod": 0.7281,
+        "far": 0.1786,
+        "csi": 0.6286,
+        "ets": 0.5596,
+        "fss": 0.7719,
+        "frequency_bias": 0.8865,
+        "rare_event_warning": false
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3373,
+        "hits": 2807,
+        "misses": 1077,
+        "false_alarms": 566,
+        "correct_negatives": 14522,
+        "pod": 0.7227,
+        "far": 0.1678,
+        "csi": 0.6308,
+        "ets": 0.563,
+        "fss": 0.7736,
+        "frequency_bias": 0.8684,
+        "rare_event_warning": false
+      },
+      "district_aware_ml": {
+        "threshold_mm": 2.5,
+        "total_records": 18972,
+        "observed_events": 3884,
+        "forecast_events": 3373,
+        "hits": 2807,
+        "misses": 1077,
+        "false_alarms": 566,
+        "correct_negatives": 14522,
+        "pod": 0.7227,
+        "far": 0.1678,
+        "csi": 0.6308,
+        "ets": 0.563,
+        "fss": 0.7736,
+        "frequency_bias": 0.8684,
+        "rare_event_warning": false
+      }
+    },
+    "moderate": {
+      "raw_nwp": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 665,
+        "hits": 291,
+        "misses": 7,
+        "false_alarms": 374,
+        "correct_negatives": 18300,
+        "pod": 0.9765,
+        "far": 0.5624,
+        "csi": 0.433,
+        "ets": 0.4241,
+        "fss": 0.6044,
+        "frequency_bias": 2.2315,
+        "rare_event_warning": false
+      },
+      "linear_mos": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 254,
+        "hits": 224,
+        "misses": 74,
+        "false_alarms": 30,
+        "correct_negatives": 18644,
+        "pod": 0.7517,
+        "far": 0.1181,
+        "csi": 0.6829,
+        "ets": 0.679,
+        "fss": 0.8116,
+        "frequency_bias": 0.8523,
+        "rare_event_warning": false
+      },
+      "global_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 271,
+        "hits": 237,
+        "misses": 61,
+        "false_alarms": 34,
+        "correct_negatives": 18640,
+        "pod": 0.7953,
+        "far": 0.1255,
+        "csi": 0.7139,
+        "ets": 0.7101,
+        "fss": 0.833,
+        "frequency_bias": 0.9094,
+        "rare_event_warning": false
+      },
+      "xgb_1000": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 274,
+        "hits": 240,
+        "misses": 58,
+        "false_alarms": 34,
+        "correct_negatives": 18640,
+        "pod": 0.8054,
+        "far": 0.1241,
+        "csi": 0.7229,
+        "ets": 0.7193,
+        "fss": 0.8392,
+        "frequency_bias": 0.9195,
+        "rare_event_warning": false
+      },
+      "xgb_2000": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 288,
+        "hits": 247,
+        "misses": 51,
+        "false_alarms": 41,
+        "correct_negatives": 18633,
+        "pod": 0.8289,
+        "far": 0.1424,
+        "csi": 0.7286,
+        "ets": 0.7249,
+        "fss": 0.843,
+        "frequency_bias": 0.9664,
+        "rare_event_warning": false
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 271,
+        "hits": 237,
+        "misses": 61,
+        "false_alarms": 34,
+        "correct_negatives": 18640,
+        "pod": 0.7953,
+        "far": 0.1255,
+        "csi": 0.7139,
+        "ets": 0.7101,
+        "fss": 0.833,
+        "frequency_bias": 0.9094,
+        "rare_event_warning": false
+      },
+      "random_forest": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 276,
+        "hits": 238,
+        "misses": 60,
+        "false_alarms": 38,
+        "correct_negatives": 18636,
+        "pod": 0.7987,
+        "far": 0.1377,
+        "csi": 0.7083,
+        "ets": 0.7045,
+        "fss": 0.8293,
+        "frequency_bias": 0.9262,
+        "rare_event_warning": false
+      },
+      "extra_trees": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 273,
+        "hits": 239,
+        "misses": 59,
+        "false_alarms": 34,
+        "correct_negatives": 18640,
+        "pod": 0.802,
+        "far": 0.1245,
+        "csi": 0.7199,
+        "ets": 0.7162,
+        "fss": 0.8371,
+        "frequency_bias": 0.9161,
+        "rare_event_warning": false
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 263,
+        "hits": 234,
+        "misses": 64,
+        "false_alarms": 29,
+        "correct_negatives": 18645,
+        "pod": 0.7852,
+        "far": 0.1103,
+        "csi": 0.7156,
+        "ets": 0.712,
+        "fss": 0.8342,
+        "frequency_bias": 0.8826,
+        "rare_event_warning": false
+      },
+      "district_aware_ml": {
+        "threshold_mm": 15.6,
+        "total_records": 18972,
+        "observed_events": 298,
+        "forecast_events": 263,
+        "hits": 234,
+        "misses": 64,
+        "false_alarms": 29,
+        "correct_negatives": 18645,
+        "pod": 0.7852,
+        "far": 0.1103,
+        "csi": 0.7156,
+        "ets": 0.712,
+        "fss": 0.8342,
+        "frequency_bias": 0.8826,
+        "rare_event_warning": false
+      }
+    },
+    "heavy": {
+      "raw_nwp": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 7,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 6,
+        "correct_negatives": 18965,
+        "pod": 1.0,
+        "far": 0.8571,
+        "csi": 0.1429,
+        "ets": 0.1428,
+        "fss": 0.25,
+        "frequency_bias": 7.0,
+        "rare_event_warning": true
+      },
+      "linear_mos": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 2,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 1,
+        "correct_negatives": 18970,
+        "pod": 1.0,
+        "far": 0.5,
+        "csi": 0.5,
+        "ets": 0.5,
+        "fss": 0.6667,
+        "frequency_bias": 2.0,
+        "rare_event_warning": true
+      },
+      "global_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_1000": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_2000": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "random_forest": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "extra_trees": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 2,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 1,
+        "correct_negatives": 18970,
+        "pod": 1.0,
+        "far": 0.5,
+        "csi": 0.5,
+        "ets": 0.5,
+        "fss": 0.6667,
+        "frequency_bias": 2.0,
+        "rare_event_warning": true
+      },
+      "district_aware_ml": {
+        "threshold_mm": 64.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 2,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 1,
+        "correct_negatives": 18970,
+        "pod": 1.0,
+        "far": 0.5,
+        "csi": 0.5,
+        "ets": 0.5,
+        "fss": 0.6667,
+        "frequency_bias": 2.0,
+        "rare_event_warning": true
+      }
+    },
+    "very_heavy": {
+      "raw_nwp": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "linear_mos": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 0,
+        "hits": 0,
+        "misses": 1,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 0.0,
+        "far": "N/A",
+        "csi": 0.0,
+        "ets": 0.0,
+        "fss": 0.0,
+        "frequency_bias": 0.0,
+        "rare_event_warning": true
+      },
+      "global_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_1000": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "xgb_2000": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "hist_gradient_boosting": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "random_forest": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "extra_trees": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "regime_aware_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      },
+      "district_aware_ml": {
+        "threshold_mm": 115.5,
+        "total_records": 18972,
+        "observed_events": 1,
+        "forecast_events": 1,
+        "hits": 1,
+        "misses": 0,
+        "false_alarms": 0,
+        "correct_negatives": 18971,
+        "pod": 1.0,
+        "far": 0.0,
+        "csi": 1.0,
+        "ets": 1.0,
+        "fss": 1.0,
+        "frequency_bias": 1.0,
+        "rare_event_warning": true
+      }
+    }
+  },
+  "heavy_rain_calibration": {
+    "heavy_64_5mm": {
+      "threshold_mm": 64.5,
+      "brier_score": 0.0001,
+      "sample_size": 18972,
+      "positive_cases": 1
+    },
+    "very_heavy_115_5mm": {
+      "threshold_mm": 115.5,
+      "brier_score": 0.0,
+      "sample_size": 18972,
+      "positive_cases": 1
+    }
+  },
+  "regime_breakdown": {
+    "1": {
+      "regime_name": "June Monsoon Regime (Onset & Coastal Orographic)",
+      "count": 3720,
+      "raw_nwp": {
+        "n": 3720,
+        "rmse": 3.4594,
+        "mae": 2.1354,
+        "bias": 1.7752,
+        "r_corr": 0.9137,
+        "r2": 0.2316,
+        "error_diagnosis": {
+          "overprediction_count": 2052,
+          "underprediction_count": 713,
+          "mean_overprediction_mm": 3.5437,
+          "mean_underprediction_mm": -0.9164
+        }
+      },
+      "global_ml": {
+        "n": 3720,
+        "rmse": 1.0404,
+        "mae": 0.5667,
+        "bias": 0.035,
+        "r_corr": 0.9649,
+        "r2": 0.9305,
+        "error_diagnosis": {
+          "overprediction_count": 1702,
+          "underprediction_count": 904,
+          "mean_overprediction_mm": 0.6378,
+          "mean_underprediction_mm": -1.0815
+        },
+        "rmse_improvement_pct": 69.92,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 73.46,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 3720,
+        "rmse": 1.0975,
+        "mae": 0.5924,
+        "bias": -0.0257,
+        "r_corr": 0.9608,
+        "r2": 0.9227,
+        "error_diagnosis": {
+          "overprediction_count": 1617,
+          "underprediction_count": 1024,
+          "mean_overprediction_mm": 0.6259,
+          "mean_underprediction_mm": -1.1128
+        },
+        "rmse_improvement_pct": 68.27,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 72.26,
+        "mae_status": "improvement"
+      }
+    },
+    "2": {
+      "regime_name": "July Monsoon Regime (Peak Active Surge)",
+      "count": 3844,
+      "raw_nwp": {
+        "n": 3844,
+        "rmse": 3.5565,
+        "mae": 2.3534,
+        "bias": 1.8763,
+        "r_corr": 0.9113,
+        "r2": 0.2871,
+        "error_diagnosis": {
+          "overprediction_count": 2288,
+          "underprediction_count": 897,
+          "mean_overprediction_mm": 3.5522,
+          "mean_underprediction_mm": -1.0074
+        }
+      },
+      "global_ml": {
+        "n": 3844,
+        "rmse": 1.2012,
+        "mae": 0.7484,
+        "bias": -0.0361,
+        "r_corr": 0.9585,
+        "r2": 0.9187,
+        "error_diagnosis": {
+          "overprediction_count": 1844,
+          "underprediction_count": 1276,
+          "mean_overprediction_mm": 0.7297,
+          "mean_underprediction_mm": -1.1747
+        },
+        "rmse_improvement_pct": 66.23,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 68.2,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 3844,
+        "rmse": 1.2377,
+        "mae": 0.7783,
+        "bias": -0.0776,
+        "r_corr": 0.9561,
+        "r2": 0.9137,
+        "error_diagnosis": {
+          "overprediction_count": 1917,
+          "underprediction_count": 1285,
+          "mean_overprediction_mm": 0.6903,
+          "mean_underprediction_mm": -1.2733
+        },
+        "rmse_improvement_pct": 65.2,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.93,
+        "mae_status": "improvement"
+      }
+    },
+    "3": {
+      "regime_name": "August Monsoon Regime (Mid-Monsoon Break/Active)",
+      "count": 3844,
+      "raw_nwp": {
+        "n": 3844,
+        "rmse": 3.1181,
+        "mae": 2.1446,
+        "bias": 1.4819,
+        "r_corr": 0.8928,
+        "r2": 0.5202,
+        "error_diagnosis": {
+          "overprediction_count": 2126,
+          "underprediction_count": 1070,
+          "mean_overprediction_mm": 3.2778,
+          "mean_underprediction_mm": -1.1768
+        }
+      },
+      "global_ml": {
+        "n": 3844,
+        "rmse": 1.3949,
+        "mae": 0.8652,
+        "bias": -0.0586,
+        "r_corr": 0.9509,
+        "r2": 0.904,
+        "error_diagnosis": {
+          "overprediction_count": 1885,
+          "underprediction_count": 1287,
+          "mean_overprediction_mm": 0.811,
+          "mean_underprediction_mm": -1.3738
+        },
+        "rmse_improvement_pct": 55.27,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 59.66,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 3844,
+        "rmse": 1.4613,
+        "mae": 0.902,
+        "bias": -0.1086,
+        "r_corr": 0.9463,
+        "r2": 0.8946,
+        "error_diagnosis": {
+          "overprediction_count": 1920,
+          "underprediction_count": 1297,
+          "mean_overprediction_mm": 0.7838,
+          "mean_underprediction_mm": -1.4903
+        },
+        "rmse_improvement_pct": 53.14,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 57.94,
+        "mae_status": "improvement"
+      }
+    },
+    "4": {
+      "regime_name": "September Monsoon Regime (Withdrawal & Lows)",
+      "count": 3720,
+      "raw_nwp": {
+        "n": 3720,
+        "rmse": 2.6626,
+        "mae": 1.7562,
+        "bias": 1.1332,
+        "r_corr": 0.8263,
+        "r2": 0.4368,
+        "error_diagnosis": {
+          "overprediction_count": 1871,
+          "underprediction_count": 984,
+          "mean_overprediction_mm": 2.8708,
+          "mean_underprediction_mm": -1.1603
+        }
+      },
+      "global_ml": {
+        "n": 3720,
+        "rmse": 1.3393,
+        "mae": 0.7403,
+        "bias": -0.0621,
+        "r_corr": 0.9285,
+        "r2": 0.8575,
+        "error_diagnosis": {
+          "overprediction_count": 1811,
+          "underprediction_count": 1042,
+          "mean_overprediction_mm": 0.6807,
+          "mean_underprediction_mm": -1.4243
+        },
+        "rmse_improvement_pct": 49.7,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 57.85,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 3720,
+        "rmse": 1.3812,
+        "mae": 0.7755,
+        "bias": -0.0633,
+        "r_corr": 0.9241,
+        "r2": 0.8485,
+        "error_diagnosis": {
+          "overprediction_count": 1994,
+          "underprediction_count": 1008,
+          "mean_overprediction_mm": 0.6496,
+          "mean_underprediction_mm": -1.5392
+        },
+        "rmse_improvement_pct": 48.13,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 55.84,
+        "mae_status": "improvement"
+      }
+    },
+    "5": {
+      "regime_name": "October Post-Monsoon Regime (Retreating Monsoon/Transition)",
+      "count": 3844,
+      "raw_nwp": {
+        "n": 3844,
+        "rmse": 2.8189,
+        "mae": 1.8244,
+        "bias": 1.3092,
+        "r_corr": 0.8231,
+        "r2": 0.3505,
+        "error_diagnosis": {
+          "overprediction_count": 1948,
+          "underprediction_count": 848,
+          "mean_overprediction_mm": 3.0907,
+          "mean_underprediction_mm": -1.1514
+        }
+      },
+      "global_ml": {
+        "n": 3844,
+        "rmse": 1.3982,
+        "mae": 0.74,
+        "bias": -0.0074,
+        "r_corr": 0.9168,
+        "r2": 0.8402,
+        "error_diagnosis": {
+          "overprediction_count": 1902,
+          "underprediction_count": 903,
+          "mean_overprediction_mm": 0.7237,
+          "mean_underprediction_mm": -1.5816
+        },
+        "rmse_improvement_pct": 50.4,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 59.44,
+        "mae_status": "improvement"
+      },
+      "regime_aware_ml": {
+        "n": 3844,
+        "rmse": 1.4234,
+        "mae": 0.7563,
+        "bias": -0.0297,
+        "r_corr": 0.9135,
+        "r2": 0.8344,
+        "error_diagnosis": {
+          "overprediction_count": 1849,
+          "underprediction_count": 961,
+          "mean_overprediction_mm": 0.7395,
+          "mean_underprediction_mm": -1.5617
+        },
+        "rmse_improvement_pct": 49.5,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 58.55,
+        "mae_status": "improvement"
+      }
+    }
+  },
+  "district_breakdown": {
+    "Bagalkot": {
+      "district": "Bagalkot",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.0127,
+        "mae": 1.8822,
+        "bias": 1.4998,
+        "r_corr": 0.8162,
+        "r2": -0.1449,
+        "error_diagnosis": {
+          "overprediction_count": 326,
+          "underprediction_count": 123,
+          "mean_overprediction_mm": 3.1728,
+          "mean_underprediction_mm": -0.9298
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.0479,
+        "mae": 0.5847,
+        "bias": 0.0761,
+        "r_corr": 0.9306,
+        "r2": 0.8615,
+        "error_diagnosis": {
+          "overprediction_count": 291,
+          "underprediction_count": 147,
+          "mean_overprediction_mm": 0.6762,
+          "mean_underprediction_mm": -1.0472
+        },
+        "rmse_improvement_pct": 65.22,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 68.94,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.0663,
+        "mae": 0.6029,
+        "bias": 0.045,
+        "r_corr": 0.9262,
+        "r2": 0.8566,
+        "error_diagnosis": {
+          "overprediction_count": 296,
+          "underprediction_count": 157,
+          "mean_overprediction_mm": 0.6506,
+          "mean_underprediction_mm": -1.0768
+        },
+        "rmse_improvement_pct": 64.61,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 67.97,
+        "mae_status": "improvement"
+      }
+    },
+    "Ballari": {
+      "district": "Ballari",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.7978,
+        "mae": 1.8049,
+        "bias": 1.4065,
+        "r_corr": 0.8049,
+        "r2": 0.1385,
+        "error_diagnosis": {
+          "overprediction_count": 328,
+          "underprediction_count": 112,
+          "mean_overprediction_mm": 2.995,
+          "mean_underprediction_mm": -1.0624
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1906,
+        "mae": 0.6459,
+        "bias": -0.0389,
+        "r_corr": 0.9196,
+        "r2": 0.844,
+        "error_diagnosis": {
+          "overprediction_count": 298,
+          "underprediction_count": 144,
+          "mean_overprediction_mm": 0.6042,
+          "mean_underprediction_mm": -1.4459
+        },
+        "rmse_improvement_pct": 57.45,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.21,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2027,
+        "mae": 0.6706,
+        "bias": -0.0331,
+        "r_corr": 0.9181,
+        "r2": 0.8408,
+        "error_diagnosis": {
+          "overprediction_count": 322,
+          "underprediction_count": 150,
+          "mean_overprediction_mm": 0.5882,
+          "mean_underprediction_mm": -1.4295
+        },
+        "rmse_improvement_pct": 57.01,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.85,
+        "mae_status": "improvement"
+      }
+    },
+    "Belagavi": {
+      "district": "Belagavi",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.1505,
+        "mae": 2.2165,
+        "bias": 1.5737,
+        "r_corr": 0.7516,
+        "r2": -0.1683,
+        "error_diagnosis": {
+          "overprediction_count": 358,
+          "underprediction_count": 175,
+          "mean_overprediction_mm": 3.2383,
+          "mean_underprediction_mm": -1.1115
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.3709,
+        "mae": 0.805,
+        "bias": -0.0246,
+        "r_corr": 0.8834,
+        "r2": 0.7788,
+        "error_diagnosis": {
+          "overprediction_count": 283,
+          "underprediction_count": 198,
+          "mean_overprediction_mm": 0.8316,
+          "mean_underprediction_mm": -1.2704
+        },
+        "rmse_improvement_pct": 56.48,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.68,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.4015,
+        "mae": 0.8221,
+        "bias": -0.0778,
+        "r_corr": 0.8794,
+        "r2": 0.7688,
+        "error_diagnosis": {
+          "overprediction_count": 291,
+          "underprediction_count": 213,
+          "mean_overprediction_mm": 0.77,
+          "mean_underprediction_mm": -1.2817
+        },
+        "rmse_improvement_pct": 55.52,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.91,
+        "mae_status": "improvement"
+      }
+    },
+    "Bengaluru Rural": {
+      "district": "Bengaluru Rural",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.7876,
+        "mae": 1.7567,
+        "bias": 1.1443,
+        "r_corr": 0.7577,
+        "r2": -0.2584,
+        "error_diagnosis": {
+          "overprediction_count": 284,
+          "underprediction_count": 156,
+          "mean_overprediction_mm": 3.1247,
+          "mean_underprediction_mm": -1.1824
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.199,
+        "mae": 0.6491,
+        "bias": -0.088,
+        "r_corr": 0.8772,
+        "r2": 0.7672,
+        "error_diagnosis": {
+          "overprediction_count": 292,
+          "underprediction_count": 161,
+          "mean_overprediction_mm": 0.5687,
+          "mean_underprediction_mm": -1.3929
+        },
+        "rmse_improvement_pct": 56.99,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.05,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.263,
+        "mae": 0.6721,
+        "bias": -0.1292,
+        "r_corr": 0.8635,
+        "r2": 0.7417,
+        "error_diagnosis": {
+          "overprediction_count": 282,
+          "underprediction_count": 157,
+          "mean_overprediction_mm": 0.5649,
+          "mean_underprediction_mm": -1.5495
+        },
+        "rmse_improvement_pct": 54.69,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 61.74,
+        "mae_status": "improvement"
+      }
+    },
+    "Bengaluru Urban": {
+      "district": "Bengaluru Urban",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8632,
+        "mae": 1.9582,
+        "bias": 1.3566,
+        "r_corr": 0.7056,
+        "r2": -0.3247,
+        "error_diagnosis": {
+          "overprediction_count": 327,
+          "underprediction_count": 158,
+          "mean_overprediction_mm": 3.101,
+          "mean_underprediction_mm": -1.1462
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2929,
+        "mae": 0.6599,
+        "bias": -0.1151,
+        "r_corr": 0.8561,
+        "r2": 0.7299,
+        "error_diagnosis": {
+          "overprediction_count": 283,
+          "underprediction_count": 180,
+          "mean_overprediction_mm": 0.5744,
+          "mean_underprediction_mm": -1.3067
+        },
+        "rmse_improvement_pct": 54.85,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.3,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.3614,
+        "mae": 0.6902,
+        "bias": -0.1788,
+        "r_corr": 0.8418,
+        "r2": 0.7005,
+        "error_diagnosis": {
+          "overprediction_count": 277,
+          "underprediction_count": 190,
+          "mean_overprediction_mm": 0.5478,
+          "mean_underprediction_mm": -1.3923
+        },
+        "rmse_improvement_pct": 52.45,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.75,
+        "mae_status": "improvement"
+      }
+    },
+    "Bidar": {
+      "district": "Bidar",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.1541,
+        "mae": 2.1327,
+        "bias": 1.5878,
+        "r_corr": 0.799,
+        "r2": -0.022,
+        "error_diagnosis": {
+          "overprediction_count": 336,
+          "underprediction_count": 126,
+          "mean_overprediction_mm": 3.3876,
+          "mean_underprediction_mm": -1.308
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.3277,
+        "mae": 0.7327,
+        "bias": 0.0558,
+        "r_corr": 0.9059,
+        "r2": 0.8189,
+        "error_diagnosis": {
+          "overprediction_count": 307,
+          "underprediction_count": 146,
+          "mean_overprediction_mm": 0.7729,
+          "mean_underprediction_mm": -1.4104
+        },
+        "rmse_improvement_pct": 57.91,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 65.64,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.4082,
+        "mae": 0.7815,
+        "bias": 0.0466,
+        "r_corr": 0.893,
+        "r2": 0.7963,
+        "error_diagnosis": {
+          "overprediction_count": 331,
+          "underprediction_count": 140,
+          "mean_overprediction_mm": 0.7506,
+          "mean_underprediction_mm": -1.5997
+        },
+        "rmse_improvement_pct": 55.35,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.36,
+        "mae_status": "improvement"
+      }
+    },
+    "Chamarajanagar": {
+      "district": "Chamarajanagar",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.6749,
+        "mae": 1.6529,
+        "bias": 1.3038,
+        "r_corr": 0.8139,
+        "r2": 0.3381,
+        "error_diagnosis": {
+          "overprediction_count": 292,
+          "underprediction_count": 116,
+          "mean_overprediction_mm": 3.0965,
+          "mean_underprediction_mm": -0.9028
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.0496,
+        "mae": 0.5385,
+        "bias": -0.0243,
+        "r_corr": 0.9575,
+        "r2": 0.8981,
+        "error_diagnosis": {
+          "overprediction_count": 309,
+          "underprediction_count": 129,
+          "mean_overprediction_mm": 0.4881,
+          "mean_underprediction_mm": -1.3252
+        },
+        "rmse_improvement_pct": 60.76,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 67.42,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.0831,
+        "mae": 0.5568,
+        "bias": -0.074,
+        "r_corr": 0.9541,
+        "r2": 0.8915,
+        "error_diagnosis": {
+          "overprediction_count": 299,
+          "underprediction_count": 136,
+          "mean_overprediction_mm": 0.4718,
+          "mean_underprediction_mm": -1.4067
+        },
+        "rmse_improvement_pct": 59.51,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.32,
+        "mae_status": "improvement"
+      }
+    },
+    "Chikkaballapura": {
+      "district": "Chikkaballapura",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8448,
+        "mae": 1.8887,
+        "bias": 1.4927,
+        "r_corr": 0.6839,
+        "r2": -0.5795,
+        "error_diagnosis": {
+          "overprediction_count": 354,
+          "underprediction_count": 119,
+          "mean_overprediction_mm": 2.9214,
+          "mean_underprediction_mm": -0.9984
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2197,
+        "mae": 0.6108,
+        "bias": -0.0591,
+        "r_corr": 0.8438,
+        "r2": 0.7096,
+        "error_diagnosis": {
+          "overprediction_count": 289,
+          "underprediction_count": 161,
+          "mean_overprediction_mm": 0.5673,
+          "mean_underprediction_mm": -1.2607
+        },
+        "rmse_improvement_pct": 57.12,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 67.66,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2402,
+        "mae": 0.6321,
+        "bias": -0.0753,
+        "r_corr": 0.8379,
+        "r2": 0.6998,
+        "error_diagnosis": {
+          "overprediction_count": 286,
+          "underprediction_count": 166,
+          "mean_overprediction_mm": 0.5748,
+          "mean_underprediction_mm": -1.29
+        },
+        "rmse_improvement_pct": 56.41,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.53,
+        "mae_status": "improvement"
+      }
+    },
+    "Chikkamagaluru": {
+      "district": "Chikkamagaluru",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.2933,
+        "mae": 2.2288,
+        "bias": 1.6519,
+        "r_corr": 0.7991,
+        "r2": -0.3004,
+        "error_diagnosis": {
+          "overprediction_count": 325,
+          "underprediction_count": 167,
+          "mean_overprediction_mm": 3.6532,
+          "mean_underprediction_mm": -1.0396
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1907,
+        "mae": 0.6895,
+        "bias": -0.0216,
+        "r_corr": 0.9111,
+        "r2": 0.83,
+        "error_diagnosis": {
+          "overprediction_count": 284,
+          "underprediction_count": 200,
+          "mean_overprediction_mm": 0.7057,
+          "mean_underprediction_mm": -1.0797
+        },
+        "rmse_improvement_pct": 63.84,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 69.06,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2435,
+        "mae": 0.7241,
+        "bias": -0.1102,
+        "r_corr": 0.9038,
+        "r2": 0.8146,
+        "error_diagnosis": {
+          "overprediction_count": 272,
+          "underprediction_count": 203,
+          "mean_overprediction_mm": 0.677,
+          "mean_underprediction_mm": -1.2464
+        },
+        "rmse_improvement_pct": 62.24,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 67.51,
+        "mae_status": "improvement"
+      }
+    },
+    "Chitradurga": {
+      "district": "Chitradurga",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8822,
+        "mae": 1.8377,
+        "bias": 1.4085,
+        "r_corr": 0.8088,
+        "r2": -0.0495,
+        "error_diagnosis": {
+          "overprediction_count": 315,
+          "underprediction_count": 140,
+          "mean_overprediction_mm": 3.1523,
+          "mean_underprediction_mm": -0.9214
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 0.9872,
+        "mae": 0.5273,
+        "bias": 0.0474,
+        "r_corr": 0.9394,
+        "r2": 0.8769,
+        "error_diagnosis": {
+          "overprediction_count": 294,
+          "underprediction_count": 149,
+          "mean_overprediction_mm": 0.5801,
+          "mean_underprediction_mm": -0.9735
+        },
+        "rmse_improvement_pct": 65.75,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 71.31,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 0.9771,
+        "mae": 0.5463,
+        "bias": 0.0616,
+        "r_corr": 0.939,
+        "r2": 0.8794,
+        "error_diagnosis": {
+          "overprediction_count": 302,
+          "underprediction_count": 146,
+          "mean_overprediction_mm": 0.5962,
+          "mean_underprediction_mm": -1.0055
+        },
+        "rmse_improvement_pct": 66.1,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 70.27,
+        "mae_status": "improvement"
+      }
+    },
+    "Dakshina Kannada": {
+      "district": "Dakshina Kannada",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 4.7098,
+        "mae": 3.2428,
+        "bias": 2.3945,
+        "r_corr": 0.9528,
+        "r2": 0.541,
+        "error_diagnosis": {
+          "overprediction_count": 384,
+          "underprediction_count": 178,
+          "mean_overprediction_mm": 4.4911,
+          "mean_underprediction_mm": -1.4491
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.7648,
+        "mae": 1.272,
+        "bias": -0.0218,
+        "r_corr": 0.9676,
+        "r2": 0.9356,
+        "error_diagnosis": {
+          "overprediction_count": 310,
+          "underprediction_count": 262,
+          "mean_overprediction_mm": 1.2309,
+          "mean_underprediction_mm": -1.5076
+        },
+        "rmse_improvement_pct": 62.53,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 60.77,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.7698,
+        "mae": 1.2694,
+        "bias": -0.0545,
+        "r_corr": 0.9674,
+        "r2": 0.9352,
+        "error_diagnosis": {
+          "overprediction_count": 306,
+          "underprediction_count": 257,
+          "mean_overprediction_mm": 1.2109,
+          "mean_underprediction_mm": -1.5732
+        },
+        "rmse_improvement_pct": 62.42,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 60.86,
+        "mae_status": "improvement"
+      }
+    },
+    "Davanagere": {
+      "district": "Davanagere",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.1904,
+        "mae": 2.0612,
+        "bias": 1.4975,
+        "r_corr": 0.8546,
+        "r2": 0.2001,
+        "error_diagnosis": {
+          "overprediction_count": 321,
+          "underprediction_count": 163,
+          "mean_overprediction_mm": 3.3919,
+          "mean_underprediction_mm": -1.0455
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.22,
+        "mae": 0.7331,
+        "bias": -0.0111,
+        "r_corr": 0.9398,
+        "r2": 0.883,
+        "error_diagnosis": {
+          "overprediction_count": 293,
+          "underprediction_count": 179,
+          "mean_overprediction_mm": 0.7401,
+          "mean_underprediction_mm": -1.2618
+        },
+        "rmse_improvement_pct": 61.76,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.43,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.3052,
+        "mae": 0.795,
+        "bias": -0.0346,
+        "r_corr": 0.9314,
+        "r2": 0.8661,
+        "error_diagnosis": {
+          "overprediction_count": 299,
+          "underprediction_count": 183,
+          "mean_overprediction_mm": 0.7634,
+          "mean_underprediction_mm": -1.376
+        },
+        "rmse_improvement_pct": 59.09,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 61.43,
+        "mae_status": "improvement"
+      }
+    },
+    "Dharwad": {
+      "district": "Dharwad",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.9048,
+        "mae": 1.921,
+        "bias": 1.3124,
+        "r_corr": 0.7983,
+        "r2": 0.1533,
+        "error_diagnosis": {
+          "overprediction_count": 312,
+          "underprediction_count": 174,
+          "mean_overprediction_mm": 3.1697,
+          "mean_underprediction_mm": -1.0514
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.3016,
+        "mae": 0.7358,
+        "bias": -0.0076,
+        "r_corr": 0.9115,
+        "r2": 0.83,
+        "error_diagnosis": {
+          "overprediction_count": 291,
+          "underprediction_count": 176,
+          "mean_overprediction_mm": 0.7509,
+          "mean_underprediction_mm": -1.2814
+        },
+        "rmse_improvement_pct": 55.19,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 61.7,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.3894,
+        "mae": 0.7901,
+        "bias": -0.0097,
+        "r_corr": 0.8983,
+        "r2": 0.8063,
+        "error_diagnosis": {
+          "overprediction_count": 310,
+          "underprediction_count": 187,
+          "mean_overprediction_mm": 0.757,
+          "mean_underprediction_mm": -1.301
+        },
+        "rmse_improvement_pct": 52.17,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 58.87,
+        "mae_status": "improvement"
+      }
+    },
+    "Gadag": {
+      "district": "Gadag",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.9688,
+        "mae": 1.9473,
+        "bias": 1.5127,
+        "r_corr": 0.8115,
+        "r2": 0.1209,
+        "error_diagnosis": {
+          "overprediction_count": 337,
+          "underprediction_count": 145,
+          "mean_overprediction_mm": 3.1407,
+          "mean_underprediction_mm": -0.8969
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2598,
+        "mae": 0.6872,
+        "bias": -0.051,
+        "r_corr": 0.9196,
+        "r2": 0.8417,
+        "error_diagnosis": {
+          "overprediction_count": 295,
+          "underprediction_count": 178,
+          "mean_overprediction_mm": 0.647,
+          "mean_underprediction_mm": -1.2601
+        },
+        "rmse_improvement_pct": 57.57,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.71,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.289,
+        "mae": 0.7161,
+        "bias": -0.0446,
+        "r_corr": 0.9152,
+        "r2": 0.8343,
+        "error_diagnosis": {
+          "overprediction_count": 310,
+          "underprediction_count": 177,
+          "mean_overprediction_mm": 0.6496,
+          "mean_underprediction_mm": -1.3056
+        },
+        "rmse_improvement_pct": 56.58,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.23,
+        "mae_status": "improvement"
+      }
+    },
+    "Hassan": {
+      "district": "Hassan",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.9137,
+        "mae": 1.9548,
+        "bias": 1.5303,
+        "r_corr": 0.7302,
+        "r2": -0.5098,
+        "error_diagnosis": {
+          "overprediction_count": 336,
+          "underprediction_count": 140,
+          "mean_overprediction_mm": 3.173,
+          "mean_underprediction_mm": -0.9043
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1159,
+        "mae": 0.66,
+        "bias": 0.1079,
+        "r_corr": 0.8835,
+        "r2": 0.7785,
+        "error_diagnosis": {
+          "overprediction_count": 327,
+          "underprediction_count": 134,
+          "mean_overprediction_mm": 0.7052,
+          "mean_underprediction_mm": -1.2509
+        },
+        "rmse_improvement_pct": 61.7,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.24,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1489,
+        "mae": 0.6674,
+        "bias": 0.0529,
+        "r_corr": 0.8756,
+        "r2": 0.7653,
+        "error_diagnosis": {
+          "overprediction_count": 326,
+          "underprediction_count": 138,
+          "mean_overprediction_mm": 0.6597,
+          "mean_underprediction_mm": -1.3482
+        },
+        "rmse_improvement_pct": 60.57,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 65.86,
+        "mae_status": "improvement"
+      }
+    },
+    "Haveri": {
+      "district": "Haveri",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.852,
+        "mae": 1.8982,
+        "bias": 1.4405,
+        "r_corr": 0.7959,
+        "r2": -0.1478,
+        "error_diagnosis": {
+          "overprediction_count": 336,
+          "underprediction_count": 149,
+          "mean_overprediction_mm": 3.0395,
+          "mean_underprediction_mm": -0.9232
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.09,
+        "mae": 0.6527,
+        "bias": 0.1201,
+        "r_corr": 0.9135,
+        "r2": 0.8323,
+        "error_diagnosis": {
+          "overprediction_count": 308,
+          "underprediction_count": 154,
+          "mean_overprediction_mm": 0.7523,
+          "mean_underprediction_mm": -1.0466
+        },
+        "rmse_improvement_pct": 61.78,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 65.61,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1055,
+        "mae": 0.6839,
+        "bias": 0.0973,
+        "r_corr": 0.9104,
+        "r2": 0.8276,
+        "error_diagnosis": {
+          "overprediction_count": 333,
+          "underprediction_count": 167,
+          "mean_overprediction_mm": 0.7071,
+          "mean_underprediction_mm": -1.0637
+        },
+        "rmse_improvement_pct": 61.24,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.97,
+        "mae_status": "improvement"
+      }
+    },
+    "Kalaburagi": {
+      "district": "Kalaburagi",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.9542,
+        "mae": 1.9516,
+        "bias": 1.4138,
+        "r_corr": 0.8548,
+        "r2": 0.3036,
+        "error_diagnosis": {
+          "overprediction_count": 327,
+          "underprediction_count": 141,
+          "mean_overprediction_mm": 3.1485,
+          "mean_underprediction_mm": -1.1525
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2299,
+        "mae": 0.711,
+        "bias": -0.0208,
+        "r_corr": 0.9378,
+        "r2": 0.8793,
+        "error_diagnosis": {
+          "overprediction_count": 287,
+          "underprediction_count": 166,
+          "mean_overprediction_mm": 0.72,
+          "mean_underprediction_mm": -1.3411
+        },
+        "rmse_improvement_pct": 58.37,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.57,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2433,
+        "mae": 0.73,
+        "bias": -0.0422,
+        "r_corr": 0.9364,
+        "r2": 0.8767,
+        "error_diagnosis": {
+          "overprediction_count": 309,
+          "underprediction_count": 165,
+          "mean_overprediction_mm": 0.6661,
+          "mean_underprediction_mm": -1.4211
+        },
+        "rmse_improvement_pct": 57.91,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.6,
+        "mae_status": "improvement"
+      }
+    },
+    "Kodagu": {
+      "district": "Kodagu",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.7015,
+        "mae": 2.5583,
+        "bias": 1.7888,
+        "r_corr": 0.9271,
+        "r2": 0.5696,
+        "error_diagnosis": {
+          "overprediction_count": 366,
+          "underprediction_count": 181,
+          "mean_overprediction_mm": 3.6339,
+          "mean_underprediction_mm": -1.2912
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.444,
+        "mae": 0.9923,
+        "bias": -0.2038,
+        "r_corr": 0.9674,
+        "r2": 0.9345,
+        "error_diagnosis": {
+          "overprediction_count": 254,
+          "underprediction_count": 291,
+          "mean_overprediction_mm": 0.94,
+          "mean_underprediction_mm": -1.2556
+        },
+        "rmse_improvement_pct": 60.99,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 61.21,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.5099,
+        "mae": 1.0505,
+        "bias": -0.3603,
+        "r_corr": 0.9656,
+        "r2": 0.9284,
+        "error_diagnosis": {
+          "overprediction_count": 233,
+          "underprediction_count": 315,
+          "mean_overprediction_mm": 0.8987,
+          "mean_underprediction_mm": -1.367
+        },
+        "rmse_improvement_pct": 59.21,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 58.94,
+        "mae_status": "improvement"
+      }
+    },
+    "Kolar": {
+      "district": "Kolar",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8323,
+        "mae": 1.7781,
+        "bias": 1.4194,
+        "r_corr": 0.7258,
+        "r2": -0.657,
+        "error_diagnosis": {
+          "overprediction_count": 320,
+          "underprediction_count": 107,
+          "mean_overprediction_mm": 3.0568,
+          "mean_underprediction_mm": -1.0019
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1631,
+        "mae": 0.5894,
+        "bias": 0.0664,
+        "r_corr": 0.8525,
+        "r2": 0.7206,
+        "error_diagnosis": {
+          "overprediction_count": 329,
+          "underprediction_count": 108,
+          "mean_overprediction_mm": 0.5928,
+          "mean_underprediction_mm": -1.4719
+        },
+        "rmse_improvement_pct": 58.93,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.85,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1617,
+        "mae": 0.5954,
+        "bias": 0.0373,
+        "r_corr": 0.8515,
+        "r2": 0.7212,
+        "error_diagnosis": {
+          "overprediction_count": 327,
+          "underprediction_count": 114,
+          "mean_overprediction_mm": 0.5728,
+          "mean_underprediction_mm": -1.4868
+        },
+        "rmse_improvement_pct": 58.98,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.51,
+        "mae_status": "improvement"
+      }
+    },
+    "Koppal": {
+      "district": "Koppal",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8733,
+        "mae": 1.8172,
+        "bias": 1.2956,
+        "r_corr": 0.8553,
+        "r2": 0.4183,
+        "error_diagnosis": {
+          "overprediction_count": 316,
+          "underprediction_count": 131,
+          "mean_overprediction_mm": 3.0133,
+          "mean_underprediction_mm": -1.1967
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.3594,
+        "mae": 0.6863,
+        "bias": -0.1637,
+        "r_corr": 0.9358,
+        "r2": 0.8698,
+        "error_diagnosis": {
+          "overprediction_count": 267,
+          "underprediction_count": 173,
+          "mean_overprediction_mm": 0.5763,
+          "mean_underprediction_mm": -1.4952
+        },
+        "rmse_improvement_pct": 52.69,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.23,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.4177,
+        "mae": 0.7382,
+        "bias": -0.1973,
+        "r_corr": 0.9309,
+        "r2": 0.8584,
+        "error_diagnosis": {
+          "overprediction_count": 288,
+          "underprediction_count": 185,
+          "mean_overprediction_mm": 0.5564,
+          "mean_underprediction_mm": -1.5418
+        },
+        "rmse_improvement_pct": 50.66,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 59.38,
+        "mae_status": "improvement"
+      }
+    },
+    "Mandya": {
+      "district": "Mandya",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8564,
+        "mae": 1.8402,
+        "bias": 1.3825,
+        "r_corr": 0.8244,
+        "r2": 0.2128,
+        "error_diagnosis": {
+          "overprediction_count": 326,
+          "underprediction_count": 129,
+          "mean_overprediction_mm": 3.0237,
+          "mean_underprediction_mm": -1.0661
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.219,
+        "mae": 0.6572,
+        "bias": -0.0791,
+        "r_corr": 0.9266,
+        "r2": 0.8566,
+        "error_diagnosis": {
+          "overprediction_count": 289,
+          "underprediction_count": 154,
+          "mean_overprediction_mm": 0.5945,
+          "mean_underprediction_mm": -1.4515
+        },
+        "rmse_improvement_pct": 57.32,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.29,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2568,
+        "mae": 0.6786,
+        "bias": -0.1164,
+        "r_corr": 0.9222,
+        "r2": 0.8476,
+        "error_diagnosis": {
+          "overprediction_count": 284,
+          "underprediction_count": 165,
+          "mean_overprediction_mm": 0.5862,
+          "mean_underprediction_mm": -1.4658
+        },
+        "rmse_improvement_pct": 56.0,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.13,
+        "mae_status": "improvement"
+      }
+    },
+    "Mysuru": {
+      "district": "Mysuru",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.6795,
+        "mae": 1.7895,
+        "bias": 1.3843,
+        "r_corr": 0.8631,
+        "r2": 0.4181,
+        "error_diagnosis": {
+          "overprediction_count": 339,
+          "underprediction_count": 132,
+          "mean_overprediction_mm": 2.8636,
+          "mean_underprediction_mm": -0.9218
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2053,
+        "mae": 0.6337,
+        "bias": -0.0774,
+        "r_corr": 0.9438,
+        "r2": 0.8822,
+        "error_diagnosis": {
+          "overprediction_count": 291,
+          "underprediction_count": 168,
+          "mean_overprediction_mm": 0.5687,
+          "mean_underprediction_mm": -1.2861
+        },
+        "rmse_improvement_pct": 55.02,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.59,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.271,
+        "mae": 0.6646,
+        "bias": -0.1064,
+        "r_corr": 0.9359,
+        "r2": 0.8691,
+        "error_diagnosis": {
+          "overprediction_count": 283,
+          "underprediction_count": 170,
+          "mean_overprediction_mm": 0.585,
+          "mean_underprediction_mm": -1.3785
+        },
+        "rmse_improvement_pct": 52.57,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.86,
+        "mae_status": "improvement"
+      }
+    },
+    "Raichur": {
+      "district": "Raichur",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8836,
+        "mae": 1.8922,
+        "bias": 1.3822,
+        "r_corr": 0.8617,
+        "r2": 0.5017,
+        "error_diagnosis": {
+          "overprediction_count": 329,
+          "underprediction_count": 127,
+          "mean_overprediction_mm": 3.0452,
+          "mean_underprediction_mm": -1.2089
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2738,
+        "mae": 0.6675,
+        "bias": -0.0591,
+        "r_corr": 0.955,
+        "r2": 0.9028,
+        "error_diagnosis": {
+          "overprediction_count": 304,
+          "underprediction_count": 156,
+          "mean_overprediction_mm": 0.5951,
+          "mean_underprediction_mm": -1.4198
+        },
+        "rmse_improvement_pct": 55.82,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.72,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2843,
+        "mae": 0.6949,
+        "bias": -0.0614,
+        "r_corr": 0.9553,
+        "r2": 0.9012,
+        "error_diagnosis": {
+          "overprediction_count": 319,
+          "underprediction_count": 157,
+          "mean_overprediction_mm": 0.5905,
+          "mean_underprediction_mm": -1.4641
+        },
+        "rmse_improvement_pct": 55.46,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.27,
+        "mae_status": "improvement"
+      }
+    },
+    "Ramanagara": {
+      "district": "Ramanagara",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 3.0097,
+        "mae": 1.916,
+        "bias": 1.5213,
+        "r_corr": 0.8428,
+        "r2": 0.1837,
+        "error_diagnosis": {
+          "overprediction_count": 328,
+          "underprediction_count": 131,
+          "mean_overprediction_mm": 3.2061,
+          "mean_underprediction_mm": -0.9
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1506,
+        "mae": 0.6476,
+        "bias": 0.0468,
+        "r_corr": 0.9386,
+        "r2": 0.8807,
+        "error_diagnosis": {
+          "overprediction_count": 300,
+          "underprediction_count": 161,
+          "mean_overprediction_mm": 0.6912,
+          "mean_underprediction_mm": -1.1333
+        },
+        "rmse_improvement_pct": 61.77,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 66.2,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2076,
+        "mae": 0.6726,
+        "bias": -0.0071,
+        "r_corr": 0.9322,
+        "r2": 0.8686,
+        "error_diagnosis": {
+          "overprediction_count": 310,
+          "underprediction_count": 164,
+          "mean_overprediction_mm": 0.642,
+          "mean_underprediction_mm": -1.2599
+        },
+        "rmse_improvement_pct": 59.88,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 64.9,
+        "mae_status": "improvement"
+      }
+    },
+    "Shivamogga": {
+      "district": "Shivamogga",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8075,
+        "mae": 1.8749,
+        "bias": 1.2928,
+        "r_corr": 0.7564,
+        "r2": -0.2136,
+        "error_diagnosis": {
+          "overprediction_count": 322,
+          "underprediction_count": 156,
+          "mean_overprediction_mm": 3.0089,
+          "mean_underprediction_mm": -1.1267
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1465,
+        "mae": 0.6765,
+        "bias": -0.0112,
+        "r_corr": 0.8931,
+        "r2": 0.7976,
+        "error_diagnosis": {
+          "overprediction_count": 292,
+          "underprediction_count": 171,
+          "mean_overprediction_mm": 0.6811,
+          "mean_underprediction_mm": -1.2222
+        },
+        "rmse_improvement_pct": 59.16,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.92,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1663,
+        "mae": 0.6928,
+        "bias": -0.0365,
+        "r_corr": 0.8897,
+        "r2": 0.7905,
+        "error_diagnosis": {
+          "overprediction_count": 303,
+          "underprediction_count": 174,
+          "mean_overprediction_mm": 0.6478,
+          "mean_underprediction_mm": -1.2717
+        },
+        "rmse_improvement_pct": 58.46,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.05,
+        "mae_status": "improvement"
+      }
+    },
+    "Tumakuru": {
+      "district": "Tumakuru",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8055,
+        "mae": 1.8459,
+        "bias": 1.3921,
+        "r_corr": 0.8459,
+        "r2": 0.2612,
+        "error_diagnosis": {
+          "overprediction_count": 324,
+          "underprediction_count": 150,
+          "mean_overprediction_mm": 3.0562,
+          "mean_underprediction_mm": -0.9163
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2316,
+        "mae": 0.6742,
+        "bias": -0.0861,
+        "r_corr": 0.9269,
+        "r2": 0.8576,
+        "error_diagnosis": {
+          "overprediction_count": 276,
+          "underprediction_count": 171,
+          "mean_overprediction_mm": 0.6327,
+          "mean_underprediction_mm": -1.352
+        },
+        "rmse_improvement_pct": 56.1,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.48,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.2539,
+        "mae": 0.6793,
+        "bias": -0.1622,
+        "r_corr": 0.9261,
+        "r2": 0.8524,
+        "error_diagnosis": {
+          "overprediction_count": 270,
+          "underprediction_count": 186,
+          "mean_overprediction_mm": 0.565,
+          "mean_underprediction_mm": -1.3784
+        },
+        "rmse_improvement_pct": 55.31,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.2,
+        "mae_status": "improvement"
+      }
+    },
+    "Udupi": {
+      "district": "Udupi",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 5.0204,
+        "mae": 3.3579,
+        "bias": 2.5092,
+        "r_corr": 0.9592,
+        "r2": 0.6449,
+        "error_diagnosis": {
+          "overprediction_count": 397,
+          "underprediction_count": 174,
+          "mean_overprediction_mm": 4.5218,
+          "mean_underprediction_mm": -1.4854
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.9808,
+        "mae": 1.4202,
+        "bias": -0.1227,
+        "r_corr": 0.9735,
+        "r2": 0.9447,
+        "error_diagnosis": {
+          "overprediction_count": 287,
+          "underprediction_count": 275,
+          "mean_overprediction_mm": 1.3777,
+          "mean_underprediction_mm": -1.7124
+        },
+        "rmse_improvement_pct": 60.54,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 57.71,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 2.1518,
+        "mae": 1.4902,
+        "bias": -0.1168,
+        "r_corr": 0.9706,
+        "r2": 0.9348,
+        "error_diagnosis": {
+          "overprediction_count": 298,
+          "underprediction_count": 278,
+          "mean_overprediction_mm": 1.4068,
+          "mean_underprediction_mm": -1.7652
+        },
+        "rmse_improvement_pct": 57.14,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 55.62,
+        "mae_status": "improvement"
+      }
+    },
+    "Uttara Kannada": {
+      "district": "Uttara Kannada",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 4.1297,
+        "mae": 2.876,
+        "bias": 2.0104,
+        "r_corr": 0.9274,
+        "r2": 0.5415,
+        "error_diagnosis": {
+          "overprediction_count": 377,
+          "underprediction_count": 186,
+          "mean_overprediction_mm": 3.9649,
+          "mean_underprediction_mm": -1.4199
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.7617,
+        "mae": 1.2627,
+        "bias": 0.0071,
+        "r_corr": 0.9574,
+        "r2": 0.9166,
+        "error_diagnosis": {
+          "overprediction_count": 323,
+          "underprediction_count": 245,
+          "mean_overprediction_mm": 1.1982,
+          "mean_underprediction_mm": -1.5655
+        },
+        "rmse_improvement_pct": 57.34,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 56.1,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.8088,
+        "mae": 1.3047,
+        "bias": -0.0846,
+        "r_corr": 0.9551,
+        "r2": 0.912,
+        "error_diagnosis": {
+          "overprediction_count": 311,
+          "underprediction_count": 253,
+          "mean_overprediction_mm": 1.1952,
+          "mean_underprediction_mm": -1.676
+        },
+        "rmse_improvement_pct": 56.2,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 54.64,
+        "mae_status": "improvement"
+      }
+    },
+    "Vijayanagara": {
+      "district": "Vijayanagara",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.7629,
+        "mae": 1.8069,
+        "bias": 1.3404,
+        "r_corr": 0.8323,
+        "r2": 0.2416,
+        "error_diagnosis": {
+          "overprediction_count": 305,
+          "underprediction_count": 159,
+          "mean_overprediction_mm": 3.1568,
+          "mean_underprediction_mm": -0.8781
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.0647,
+        "mae": 0.5801,
+        "bias": 0.0117,
+        "r_corr": 0.9425,
+        "r2": 0.8874,
+        "error_diagnosis": {
+          "overprediction_count": 297,
+          "underprediction_count": 154,
+          "mean_overprediction_mm": 0.5924,
+          "mean_underprediction_mm": -1.1237
+        },
+        "rmse_improvement_pct": 61.46,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 67.89,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1154,
+        "mae": 0.6195,
+        "bias": -0.0085,
+        "r_corr": 0.9371,
+        "r2": 0.8764,
+        "error_diagnosis": {
+          "overprediction_count": 313,
+          "underprediction_count": 153,
+          "mean_overprediction_mm": 0.5807,
+          "mean_underprediction_mm": -1.2482
+        },
+        "rmse_improvement_pct": 59.63,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 65.72,
+        "mae_status": "improvement"
+      }
+    },
+    "Vijayapura": {
+      "district": "Vijayapura",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.7306,
+        "mae": 1.7591,
+        "bias": 1.2687,
+        "r_corr": 0.8327,
+        "r2": 0.2368,
+        "error_diagnosis": {
+          "overprediction_count": 309,
+          "underprediction_count": 136,
+          "mean_overprediction_mm": 2.9972,
+          "mean_underprediction_mm": -1.0848
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.1451,
+        "mae": 0.6481,
+        "bias": -0.0752,
+        "r_corr": 0.9319,
+        "r2": 0.8658,
+        "error_diagnosis": {
+          "overprediction_count": 286,
+          "underprediction_count": 171,
+          "mean_overprediction_mm": 0.596,
+          "mean_underprediction_mm": -1.2876
+        },
+        "rmse_improvement_pct": 58.06,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.16,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.1761,
+        "mae": 0.6716,
+        "bias": -0.0911,
+        "r_corr": 0.9288,
+        "r2": 0.8584,
+        "error_diagnosis": {
+          "overprediction_count": 297,
+          "underprediction_count": 171,
+          "mean_overprediction_mm": 0.5815,
+          "mean_underprediction_mm": -1.3575
+        },
+        "rmse_improvement_pct": 56.93,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 61.82,
+        "mae_status": "improvement"
+      }
+    },
+    "Yadgir": {
+      "district": "Yadgir",
+      "count": 612,
+      "sample_count": 612,
+      "is_fallback": true,
+      "raw_nwp": {
+        "n": 612,
+        "rmse": 2.8909,
+        "mae": 1.9176,
+        "bias": 1.4798,
+        "r_corr": 0.8289,
+        "r2": 0.1842,
+        "error_diagnosis": {
+          "overprediction_count": 329,
+          "underprediction_count": 131,
+          "mean_overprediction_mm": 3.1591,
+          "mean_underprediction_mm": -0.9978
+        }
+      },
+      "global_ml": {
+        "n": 612,
+        "rmse": 1.2214,
+        "mae": 0.6958,
+        "bias": 0.0164,
+        "r_corr": 0.9244,
+        "r2": 0.8544,
+        "error_diagnosis": {
+          "overprediction_count": 308,
+          "underprediction_count": 150,
+          "mean_overprediction_mm": 0.6912,
+          "mean_underprediction_mm": -1.3764
+        },
+        "rmse_improvement_pct": 57.75,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 63.71,
+        "mae_status": "improvement"
+      },
+      "district_ml": {
+        "n": 612,
+        "rmse": 1.252,
+        "mae": 0.7158,
+        "bias": -0.0253,
+        "r_corr": 0.9209,
+        "r2": 0.847,
+        "error_diagnosis": {
+          "overprediction_count": 310,
+          "underprediction_count": 158,
+          "mean_overprediction_mm": 0.6646,
+          "mean_underprediction_mm": -1.4262
+        },
+        "rmse_improvement_pct": 56.69,
+        "rmse_status": "improvement",
+        "mae_improvement_pct": 62.67,
+        "mae_status": "improvement"
+      }
+    }
+  },
+  "feature_importances": [
+    {
+      "feature": "thermo_heavy_rain_potential",
+      "importance_score": 0.67124,
+      "std": 0.00199
+    },
+    {
+      "feature": "tcwv",
+      "importance_score": 0.67086,
+      "std": 0.00271
+    },
+    {
+      "feature": "lag_1_rain",
+      "importance_score": 0.63899,
+      "std": 0.003
+    },
+    {
+      "feature": "cos_hour",
+      "importance_score": 0.61815,
+      "std": 0.00706
+    },
+    {
+      "feature": "cloud_saturation_index",
+      "importance_score": 0.61665,
+      "std": 0.00103
+    },
+    {
+      "feature": "lag_1_temp",
+      "importance_score": 0.59449,
+      "std": 0.00185
+    },
+    {
+      "feature": "relative_humidity",
+      "importance_score": 0.58024,
+      "std": 0.0083
+    },
+    {
+      "feature": "pressure_msl_diff6h",
+      "importance_score": 0.57983,
+      "std": 0.0034
+    },
+    {
+      "feature": "cloud_cover",
+      "importance_score": 0.57865,
+      "std": 0.00324
+    },
+    {
+      "feature": "hour",
+      "importance_score": 0.57491,
+      "std": 0.001
+    },
+    {
+      "feature": "latitude",
+      "importance_score": 0.57464,
+      "std": 0.00013
+    },
+    {
+      "feature": "nwp_saturation_deficit",
+      "importance_score": 0.57315,
+      "std": 0.00087
+    },
+    {
+      "feature": "orographic_terrain_wind_proxy",
+      "importance_score": 0.57312,
+      "std": 6e-05
+    },
+    {
+      "feature": "nwp_temp_diff",
+      "importance_score": 0.57205,
+      "std": 0.00234
+    },
+    {
+      "feature": "elevation",
+      "importance_score": 0.57076,
+      "std": 0.00036
+    },
+    {
+      "feature": "temp_2m",
+      "importance_score": 0.57072,
+      "std": 0.00047
+    },
+    {
+      "feature": "lag_2_rain",
+      "importance_score": 0.57065,
+      "std": 6e-05
+    },
+    {
+      "feature": "pressure_msl",
+      "importance_score": 0.57048,
+      "std": 0.00116
+    },
+    {
+      "feature": "nwp_rain_lag1",
+      "importance_score": 0.5696,
+      "std": 0.00043
+    },
+    {
+      "feature": "coastal_moisture_lift",
+      "importance_score": 0.56921,
+      "std": 0.00011
+    },
+    {
+      "feature": "nwp_wind_speed",
+      "importance_score": 0.56895,
+      "std": 0.00012
+    },
+    {
+      "feature": "wind_speed",
+      "importance_score": 0.5685,
+      "std": 0.00034
+    },
+    {
+      "feature": "surface_pressure",
+      "importance_score": 0.56815,
+      "std": 0.0027
+    },
+    {
+      "feature": "orographic_lift_vector",
+      "importance_score": 0.56814,
+      "std": 0.00052
+    },
+    {
+      "feature": "saturation_vapor_pressure_deficit",
+      "importance_score": 0.56786,
+      "std": 0.0011
+    },
+    {
+      "feature": "nwp_pressure",
+      "importance_score": 0.56776,
+      "std": 0.00067
+    },
+    {
+      "feature": "wind_direction",
+      "importance_score": 0.56682,
+      "std": 0.00056
+    },
+    {
+      "feature": "dew_point_depression",
+      "importance_score": 0.56639,
+      "std": 0.00068
+    },
+    {
+      "feature": "moisture_flux_v",
+      "importance_score": 0.56531,
+      "std": 4e-05
+    },
+    {
+      "feature": "coastal_distance_proxy",
+      "importance_score": 0.56505,
+      "std": 0.0
+    },
+    {
+      "feature": "nwp_rain_sq",
+      "importance_score": 0.56505,
+      "std": 0.0
+    },
+    {
+      "feature": "log_nwp_rain",
+      "importance_score": 0.56505,
+      "std": 0.0
+    },
+    {
+      "feature": "cos_month",
+      "importance_score": 0.56505,
+      "std": 0.0
+    },
+    {
+      "feature": "wind_shear_sq",
+      "importance_score": 0.56505,
+      "std": 0.0
+    },
+    {
+      "feature": "nwp_temp",
+      "importance_score": 0.56441,
+      "std": 0.00045
+    },
+    {
+      "feature": "nwp_pressure_diff",
+      "importance_score": 0.5642,
+      "std": 0.00155
+    },
+    {
+      "feature": "longitude",
+      "importance_score": 0.56405,
+      "std": 0.00058
+    },
+    {
+      "feature": "v_wind",
+      "importance_score": 0.56387,
+      "std": 0.00073
+    },
+    {
+      "feature": "boundary_layer_height",
+      "importance_score": 0.5635,
+      "std": 0.00224
+    },
+    {
+      "feature": "nwp_wind_diff",
+      "importance_score": 0.56271,
+      "std": 0.00159
+    },
+    {
+      "feature": "sin_hour",
+      "importance_score": 0.56261,
+      "std": 0.00638
+    },
+    {
+      "feature": "u_wind",
+      "importance_score": 0.56234,
+      "std": 0.00155
+    },
+    {
+      "feature": "surface_msl_pressure_diff",
+      "importance_score": 0.56212,
+      "std": 0.00247
+    },
+    {
+      "feature": "low_level_jet_proxy",
+      "importance_score": 0.56156,
+      "std": 0.00135
+    },
+    {
+      "feature": "moisture_flux_u",
+      "importance_score": 0.56121,
+      "std": 0.00128
+    },
+    {
+      "feature": "convective_moisture_flux",
+      "importance_score": 0.55988,
+      "std": 0.00296
+    },
+    {
+      "feature": "convective_instability",
+      "importance_score": 0.55841,
+      "std": 0.00264
+    },
+    {
+      "feature": "orographic_nwp_interaction",
+      "importance_score": 0.55781,
+      "std": 0.00434
+    },
+    {
+      "feature": "sin_month",
+      "importance_score": 0.55755,
+      "std": 0.00189
+    },
+    {
+      "feature": "nwp_rain_lag2",
+      "importance_score": 0.55642,
+      "std": 0.00035
+    },
+    {
+      "feature": "dew_point_2m",
+      "importance_score": 0.55587,
+      "std": 0.00115
+    },
+    {
+      "feature": "nwp_rain_tcwv",
+      "importance_score": 0.54896,
+      "std": 0.00273
+    },
+    {
+      "feature": "nwp_rain_roll24h_mean",
+      "importance_score": 0.5395,
+      "std": 0.00303
+    },
+    {
+      "feature": "month",
+      "importance_score": 0.5371,
+      "std": 0.00803
+    },
+    {
+      "feature": "nwp_rain_roll24h_max",
+      "importance_score": 0.53024,
+      "std": 0.00096
+    },
+    {
+      "feature": "nwp_evap_bias_proxy",
+      "importance_score": 0.48747,
+      "std": 0.00202
+    },
+    {
+      "feature": "nwp_rain_ratio",
+      "importance_score": 0.46212,
+      "std": 0.00604
+    },
+    {
+      "feature": "nwp_rain_rh",
+      "importance_score": 0.41987,
+      "std": 0.00118
+    },
+    {
+      "feature": "day_of_year",
+      "importance_score": 0.33264,
+      "std": 0.05392
+    },
+    {
+      "feature": "nwp_rain",
+      "importance_score": -0.77156,
+      "std": 0.03415
+    }
+  ],
+  "ablation_study": [
+    {
+      "experiment": "A. Raw NWP Baseline",
+      "model_type": "NWP Direct",
+      "rmse": 3.1432,
+      "mae": 2.0441,
+      "bias": 1.516,
+      "r2": 0.3765,
+      "rmse_imp_pct": 0.0
+    },
+    {
+      "experiment": "B. Linear MOS / Statistical",
+      "model_type": "Ridge Regression",
+      "rmse": 1.451,
+      "mae": 0.8682,
+      "bias": 0.0345,
+      "r2": 0.8671,
+      "rmse_imp_pct": 53.84
+    },
+    {
+      "experiment": "C. Selected Global ML",
+      "model_type": "Weighted Blend Ensemble",
+      "rmse": 1.2832,
+      "mae": 0.7331,
+      "bias": -0.026,
+      "r2": 0.8961,
+      "rmse_imp_pct": 59.18
+    },
+    {
+      "experiment": "D. Regime-Aware ML",
+      "model_type": "Classifier + Per-Regime ML",
+      "rmse": 1.3281,
+      "mae": 0.7619,
+      "bias": -0.0612,
+      "r2": 0.8887,
+      "rmse_imp_pct": 57.75
+    },
+    {
+      "experiment": "E. District-Aware ML",
+      "model_type": "District-Specific Ensemble",
+      "rmse": 1.3281,
+      "mae": 0.7619,
+      "bias": -0.0612,
+      "r2": 0.8887,
+      "rmse_imp_pct": 57.75
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+VRISHTI AI — Android APK Download
+===================================
+
+Build ID  : 3ff57923-69cd-4ec6-8f5b-eb9474370c4d
+Platform  : Android (preview APK)
+Built at  : 2026-09-26
+
+Install link (open on Android device or scan QR):
+https://expo.dev/accounts/monieshreddy/projects/vrishti-ai/builds/3ff57923-69cd-4ec6-8f5b-eb9474370c4d
+
+EAS build logs:
+https://expo.dev/accounts/monieshreddy/projects/vrishti-ai/builds/3ff57923-69cd-4ec6-8f5b-eb9474370c4d
+
+Features in this build:
+- Mobile UI matches VRISHTI AI web dashboard design exactly
+- AI Assistant with full recommended actions panel ("EXPLORE IN VRISHTI")
+- Action buttons navigate to Map, Verification, Regimes, Sandbox, FeatureImportance,
+  Calibration, ModelAblation, ScientificAudit with context pre-filled
+- ForecastContext (state/station/date) updated before navigation
+- Why This Answer section fully populated
+- No raw markdown asterisks in responses
+- Real data only — no dummy values
+- Backend: https://andrew-compile-sections-refrigerator.trycloudflare.com
